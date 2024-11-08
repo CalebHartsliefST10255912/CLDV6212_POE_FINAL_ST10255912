@@ -1,0 +1,29 @@
+﻿@model IEnumerable<ABC_Retail_ST10255912_POE.Models.Product>
+
+@{
+    ViewData["Title"] = "Products";
+}
+
+<div class="container mt-4">
+    <h1 class="text-center mb-4">Our Products</h1>
+    <div class="row">
+        @foreach (var product in Model)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card product-card h-100" id="product-card-@product.ProductId"
+                     onclick="expandCard(event, @product.ProductId)">
+                    <img src="@product.ImageUrl" class="card-img-top" alt="@product.Name">
+                    <div class="card-body">
+                        <h5 class="card-title">@product.Name</h5>
+                        <p class="card-text">@product.Description</p>
+                        <p class="card-text"><strong>Price:</strong> $@product.Price</p>
+                        <a href="/Products/Details/@product.ProductId" class="btn btn-primary">View Details</a>
+                        <a href="/Cart/Add/@product.ProductId" class="btn btn-secondary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<div id="overlay" class="overlay" style="display: none;" onclick="collapseCard()"></div>

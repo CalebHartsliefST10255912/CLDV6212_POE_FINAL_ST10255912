@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head style="background-color: #1c1c1c; color: #f1f1f1;">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ABC_Retail_ST10255912_POE</title>
+
+    <!-- Google Fonts (Monoton for brand, Poiret One for links) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Poiret+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/ABC_Retail_ST10255912_POE.styles.css" asp-append-version="true" />
+</head>
+
+<body style="background-color: #1c1c1c; color: #f1f1f1;">
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-[#1c1c1c] mb-3">
+            <div class="container-fluid d-flex justify-content-center align-items-center py-3">
+                <ul class="navbar-nav d-flex align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-white font-links" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white font-links" asp-area="" asp-controller="Products" asp-action="Index">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white font-Monoton display-5 mx-5" asp-area="" asp-controller="Home" asp-action="Index">ABC Retail</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white font-links" asp-area="" asp-controller="Account" asp-action="Register">
+                            <img src="images/shopping-bag.png" />
+                        </a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link text-white font-links" asp-area="" asp-controller="Account" asp-action="Login">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white font-links" asp-area="" asp-controller="Account" asp-action="Register">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer mt-4 border-dark">
+        <div class="container">
+            <div class="row text-center py-3">
+                <div class="col-md-4">
+                    &copy; 2024 - ABC_Retail_ST10255912_POE - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                </div>
+                <div class="col-md-4">
+                    <a href="/faqs" class="me-3">FAQs</a>
+                    <a href="/contact" class="me-3">Contact Us</a>
+                    <a href="/returns" class="me-3">Return Policy</a>
+                    <a href="/about">About Us</a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://www.facebook.com" target="_blank" class="me-3">Facebook</a>
+                    <a href="https://www.instagram.com" target="_blank" class="me-3">Instagram</a>
+                    <a href="https://www.twitter.com" target="_blank">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

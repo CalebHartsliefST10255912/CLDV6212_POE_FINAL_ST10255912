@@ -1,0 +1,17 @@
+﻿@model ABC_Retail_ST10255912_POE.Models.Product
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="container mt-4">
+    <div class="card">
+        <img src="@Model.ImageUrl" class="card-img-top" alt="@Model.Name">
+        <div class="card-body">
+            <h1 class="card-title">@Model.Name</h1>
+            <p class="card-text">@Model.Description</p>
+            <p class="card-text"><strong>Price:</strong> $@Model.Price</p>
+            <a href="/Cart/Add/@Model.ProductId" class="btn btn-primary">Add to Cart</a>
+        </div>
+    </div>
+</div>

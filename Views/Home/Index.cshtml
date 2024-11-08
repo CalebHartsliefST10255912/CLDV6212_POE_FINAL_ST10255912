@@ -1,0 +1,107 @@
+﻿@{
+    ViewData["Title"] = "ABC Retail - Shop the Best Deals";
+}
+
+<div class="hero-section">
+    <div class="hero-content">
+        <h1>Your Favorite Products, Right to Your Doorstep</h1>
+        <p>Discover deals and products tailored just for you.</p>
+        <a href="#deals" class="category-tile">Explore Deals</a>
+    </div>
+</div>
+
+<div class="ring-button-container">
+    <a href="/products" class="ring ring-1">
+        <span class="ring-text">Shop Now</span>
+    </a>
+    <a href="/products" class="ring ring-2">
+        <span class="ring-text"></span>
+    </a>
+    <a href="/products" class="ring ring-3">
+        <span class="ring-text"></span>
+    </a>
+    <a href="/products" class="ring ring-4">
+        <span class="ring-text"></span>
+    </a>
+</div>
+
+<div id="deals" class="deals-section">
+    <h2>Today's Deals</h2>
+    <div id="dealsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner">
+            <!-- Card 1 -->
+            <div class="carousel-item active">
+                <div class="card mb-3" style="max-width: 540px; margin: auto;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Deal 1</h5>
+                        <p class="card-text">This is an amazing deal on Product 1!</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="carousel-item">
+                <div class="card mb-3" style="max-width: 540px; margin: auto;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Deal 2</h5>
+                        <p class="card-text">Don’t miss out on Product 2!</p>
+                        <p class="card-text"><small class="text-muted">Last updated 5 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="carousel-item">
+                <div class="card mb-3" style="max-width: 540px; margin: auto;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Deal 3</h5>
+                        <p class="card-text">Special offer on Product 3!</p>
+                        <p class="card-text"><small class="text-muted">Last updated 10 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more cards as needed -->
+        </div>
+        
+        <!-- Carousel controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#dealsCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#dealsCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+
+<div class="testimonials-section">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonials-slider">
+        <!-- Replace with a loop for testimonials -->
+        <div class="testimonial">
+            <p>"Amazing service and fast delivery! Will shop again."</p>
+            <span>- Jane Doe</span>
+        </div>
+        <!-- More testimonials... -->
+    </div>
+</div>
+
+<div class="newsletter-section">
+    <h2>Join Our Community</h2>
+    <p>Subscribe for exclusive deals and updates!</p>
+    <form asp-controller="Home" asp-action="Subscribe">
+        <input type="email" name="email" placeholder="Enter your email" required />
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+    </form>
+</div>
+
+<div class="d-flex flex-row">
+    <p>*Custom cursor png created by - </p> 
+    <a href="https://www.flaticon.com/authors/seyfdesigner">SeyfDesigner</a>
+</div>
+
+
