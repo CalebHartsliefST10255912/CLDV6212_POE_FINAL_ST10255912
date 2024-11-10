@@ -1,28 +1,83 @@
-﻿using ABC_Retail_ST10255912_POE.Data;
+﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ABC_Retail_ST10255912_POE.Controllers
 {
     public class CustomersController : Controller
     {
-        private readonly ApplicationDbContext _context;
-
-        public CustomersController(ApplicationDbContext context)
+        // GET: CustomersController
+        public ActionResult Index()
         {
-            _context = context;
+            return View();
         }
 
-        public IActionResult Index()
+        // GET: CustomersController/Details/5
+        public ActionResult Details(int id)
         {
-            var customers = _context.Customers.ToList();
-            return View(customers);
+            return View();
         }
 
-        public IActionResult Details(int id)
+        // GET: CustomersController/Create
+        public ActionResult Create()
         {
-            var customer = _context.Customers.Find(id);
-            if (customer == null) return NotFound();
-            return View(customer);
+            return View();
+        }
+
+        // POST: CustomersController/Create
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Create(IFormCollection collection)
+        {
+            try
+            {
+                return RedirectToAction(nameof(Index));
+            }
+            catch
+            {
+                return View();
+            }
+        }
+
+        // GET: CustomersController/Edit/5
+        public ActionResult Edit(int id)
+        {
+            return View();
+        }
+
+        // POST: CustomersController/Edit/5
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(int id, IFormCollection collection)
+        {
+            try
+            {
+                return RedirectToAction(nameof(Index));
+            }
+            catch
+            {
+                return View();
+            }
+        }
+
+        // GET: CustomersController/Delete/5
+        public ActionResult Delete(int id)
+        {
+            return View();
+        }
+
+        // POST: CustomersController/Delete/5
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Delete(int id, IFormCollection collection)
+        {
+            try
+            {
+                return RedirectToAction(nameof(Index));
+            }
+            catch
+            {
+                return View();
+            }
         }
     }
 }

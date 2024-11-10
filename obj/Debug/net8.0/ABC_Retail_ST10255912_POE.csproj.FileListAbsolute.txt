@@ -293,3 +293,4 @@ C:\Users\caleb\source\repos\ABC_Retail_ST10255912_POE\ABC_Retail_ST10255912_POE\
 C:\Users\caleb\source\repos\ABC_Retail_ST10255912_POE\ABC_Retail_ST10255912_POE\obj\Debug\net8.0\ABC_Retail_ST10255912_POE.pdb
 C:\Users\caleb\source\repos\ABC_Retail_ST10255912_POE\ABC_Retail_ST10255912_POE\obj\Debug\net8.0\ABC_Retail_ST10255912_POE.genruntimeconfig.cache
 C:\Users\caleb\source\repos\ABC_Retail_ST10255912_POE\ABC_Retail_ST10255912_POE\obj\Debug\net8.0\ref\ABC_Retail_ST10255912_POE.dll
+C:\Users\caleb\source\repos\ABC_Retail_ST10255912_POE\ABC_Retail_ST10255912_POE\obj\Debug\net8.0\ABC_Retail_ST10255912_POE.sourcelink.json
