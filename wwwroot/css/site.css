@@ -182,6 +182,7 @@ body {
     overflow: hidden;
     cursor: pointer;
     position: relative; /* Needed to smoothly position the card */
+    background-color: black;
 }
 
 /* Expanded card style to center it on the screen */
@@ -219,6 +220,5 @@ body {
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
     z-index: 500;
 }
-
 
 

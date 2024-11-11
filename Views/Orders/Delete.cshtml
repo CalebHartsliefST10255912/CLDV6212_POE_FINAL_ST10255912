@@ -1,4 +1,4 @@
-﻿@model ABC_Retail_ST10255912_POE.Models.Orders
+﻿@model ABC_Retail_ST10255912_POE.Models.Order
 
 @{
     ViewData["Title"] = "Delete";
@@ -11,20 +11,39 @@
     <h4>Order</h4>
     <hr />
     <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.OrderDate)
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.UserID)
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.OrderDate)
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.UserID)
         </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.CustomerID)
-        </dt>
-        <dt class = "col-sm-2">
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.TotalPrice)
         </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.FormattedPrice)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.OrderStatus)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.OrderStatus)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CreatedDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CreatedDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ModifiedDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ModifiedDate)
+        </dd>
     </dl>
-    
+
     <form asp-action="Delete">
         <input type="hidden" asp-for="OrderID" />
         <input type="submit" value="Delete" class="btn btn-danger" /> |

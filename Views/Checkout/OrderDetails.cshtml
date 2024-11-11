@@ -1,0 +1,18 @@
+﻿@model ABC_Retail_ST10255912_POE.Models.Order
+
+<h2>Order Confirmation</h2>
+
+<div>
+    <h3>Items</h3>
+    <ul>
+        @foreach (var item in Model.OrderItems)
+        {
+            <li>@item.Product.ProductName - @item.FormattedPrice</li>
+        }
+    </ul>
+    <p><strong>Total: @Model.FormattedPrice</strong></p>
+</div>
+
+
+
+<a asp-controller="Products" asp-action="Index" class="btn btn-primary">Continue Shopping</a>

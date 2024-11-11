@@ -1,0 +1,106 @@
+﻿@using ABC_Retail_ST10255912_POE.Enums
+@model IEnumerable<ABC_Retail_ST10255912_POE.Models.Order>
+
+@{
+    ViewData["Title"] = "Index";
+    var statusFilter = ViewBag.CurrentFilter as OrderStatus?;
+
+}
+
+<h1 class="text-white">Customer Orders</h1>
+
+
+
+<form method="get" asp-action="AdminIndex">
+    <label for="statusFilter">Filter by Status:</label>
+    <select id="statusFilter" name="statusFilter" onchange="this.form.submit()">
+        <option value="">All</option>
+        @foreach (OrderStatus status in Enum.GetValues(typeof(OrderStatus)))
+        {
+            @Html.Raw($"<option value=\"{status}\" {(statusFilter.HasValue && statusFilter.Value == status ? "selected" : "")}>{status}</option>")
+        }
+    </select>
+</form>
+</p>
+<table class="table text-white">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.OrderID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalPrice)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.OrderStatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreatedDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ModifiedDate)
+            </th>
+            <th>
+                Change Status
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody class="text-white">
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OrderID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FormattedPrice)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.OrderStatus)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CreatedDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ModifiedDate)
+                </td>
+
+
+                <td>
+                    @{
+                        var excludedStatus = OrderStatus.Pending; // Define the status to exclude
+                    }
+
+                    <form asp-action="ChangeStatus" method="post">
+                        <input type="hidden" name="OrderID" value="@item.OrderID" />
+                        <select name="OrderStatus" onchange="this.form.submit()" >
+                            @if (item.OrderStatus == OrderStatus.Pending)
+                            {
+                                <option value="" selected></option>
+                                @foreach (var status in Enum.GetValues(typeof(OrderStatus)).Cast<OrderStatus>().Where(s => s != OrderStatus.Pending))
+                                {
+                                    @Html.Raw($"<option value=\"{status}\">{status}</option>")
+                                }
+                            }
+                            else
+                            {
+                                @foreach (var status in Enum.GetValues(typeof(OrderStatus)).Cast<OrderStatus>().Where(s => s != OrderStatus.Pending))
+                                {
+                                    var selected = item.OrderStatus == status ? "selected" : "";
+                                    @Html.Raw($"<option value=\"{status}\" {selected}>{status}</option>")
+                                }
+                            }
+                        </select>
+                    </form>
+                </td>
+                <td>
+
+                    <a asp-action="Details" asp-route-id="@item.OrderID">Details</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

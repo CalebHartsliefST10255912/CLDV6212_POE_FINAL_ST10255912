@@ -1,0 +1,50 @@
+﻿@model IEnumerable<ABC_Retail_ST10255912_POE.Models.Order>
+
+@{
+    ViewData["Title"] = "Order History";
+}
+
+<h1>Orders</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().UserOrderNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().TotalPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().OrderStatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstOrDefault().CreatedDate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UserOrderNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FormattedPrice)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.OrderStatus)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CreatedDate)
+                </td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.OrderID">Details</a> |
+                </td>
+            </tr>
+        }
+
+    </tbody>
+</table>

@@ -1,120 +1,166 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using ABC_Retail_ST10255912_POE.Data;
 using ABC_Retail_ST10255912_POE.Models;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using System.Linq;
-using Microsoft.IdentityModel.Tokens;
+using Microsoft.EntityFrameworkCore;
 
 namespace ABC_Retail_ST10255912_POE.Controllers
 {
     public class ProductsController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly IWebHostEnvironment _webHostEnvironment;
 
-        public ProductsController(ApplicationDbContext context)
+
+        public ProductsController(ApplicationDbContext context, IWebHostEnvironment webHostEnvironment)
         {
             _context = context;
+            _webHostEnvironment = webHostEnvironment;
         }
 
         // GET: Products
-        public async Task<IActionResult> Index()
+        // Entry point for all users
+        public IActionResult Index()
         {
-            var products = await _context.Products.ToListAsync();
+            if (User?.Identity?.IsAuthenticated ?? false)
+            {
+                if (User.IsInRole("Admin"))
+                {
+                    return RedirectToAction("AdminIndex");
+                }
+                else
+                {
+                    return RedirectToAction("ClientIndex");
+                }
+            }
+            else
+            {
+                return RedirectToAction("ClientIndex"); // Default view for non-logged in users
+            }
+        }
+
+        // GET: Products
+
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> AdminIndex()
+        {
+            //To make category name able to display
+            var products = await _context.Products
+                .Include(p => p.Category)
+                .ToListAsync();
+
+            return View(products);
+        }
+
+        public async Task<IActionResult> ClientIndex()
+        {
+
+            var products = await _context.Products
+                .Include(p => p.Category)
+                .ToListAsync();
+
             return View(products);
         }
 
         // GET: Products/Details/5
-        public async Task<IActionResult> Details(string id)
+        
+        public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var product = await _context.Products
+            var products = await _context.Products
+                .Include(p => p.Category)
                 .FirstOrDefaultAsync(m => m.ProductID == id);
-            if (product == null)
+            if (products == null)
             {
                 return NotFound();
             }
 
-            return View(product);
+            return View(products);
         }
 
         // GET: Products/Create
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Create()
+        public IActionResult Create()
         {
-            ViewBag.Categories = await _context.Categories.ToListAsync();
+            ViewData["CategoryID"] = new SelectList(_context.Set<Category>(), "CategoryID", "CategoryName");
             return View();
         }
 
         // POST: Products/Create
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Create(Products product)
+        public async Task<IActionResult> Create([Bind("ProductId,ProductName,ProductDescription,Price,ImagePath,Image,CategoryID")] Products product)
         {
+
             if (ModelState.IsValid)
             {
-                // Generate a custom ProductID
-                product.ProductID = await GenerateNextProductID();
 
+
+                if (product.Image != null)
+                {
+
+                    string uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "Images");
+                    string uniqueFileName = Guid.NewGuid().ToString() + "_" + product.Image.FileName;
+                    string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await product.Image.CopyToAsync(stream);
+                    }
+                    product.ImagePath = Path.Combine("Images", uniqueFileName);
+
+                }
+                product.InStock = true;
                 _context.Add(product);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(AdminIndex));
             }
+
+            // Repopulate CategoryID dropdown data if the model state is invalid
+            ViewData["CategoryID"] = new SelectList(_context.Set<Category>(), "CategoryID", "CategoryName", product.CategoryID);
             return View(product);
         }
 
-        // Method to generate next ProductID
-        private async Task<string> GenerateNextProductID()
-        {
-            // Get the last ProductID if available
-            var lastProduct = await _context.Products
-                .OrderByDescending(p => p.ProductID)
-                .FirstOrDefaultAsync();
-
-            if (lastProduct == null || string.IsNullOrEmpty(lastProduct.ProductID))
-            {
-                return "PR001"; // Start with PR001 if no products exist
-            }
-
-            // Extract the numeric part from ProductID and increment it
-            string numericPart = lastProduct.ProductID.Substring(2); // Strip "PR"
-            int number = int.Parse(numericPart) + 1;
-
-            // Format the new ProductID with leading zeros (up to 3 digits)
-            return $"PR{number:D3}";
-        }
 
         // GET: Products/Edit/5
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Edit(string id)
+        public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var product = await _context.Products.FindAsync(id);
-            if (product == null)
+            var products = await _context.Products.FindAsync(id);
+            if (products == null)
             {
                 return NotFound();
             }
-
-            ViewBag.Categories = new SelectList(await _context.Categories.ToListAsync(), "CategoryID", "CategoryName");
-            return View(product);
+            ViewData["CategoryID"] = new SelectList(_context.Set<Category>(), "CategoryID", "CategoryName", products.CategoryID);
+            return View(products);
         }
 
         // POST: Products/Edit/5
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Edit(string id, [Bind("ProductID,Title,Description,Price,Quantity,CategoryID,ImagePath,OnSale")] Products product)
+        public async Task<IActionResult> Edit(int id, [Bind("ProductID,ProductName,ProductDescription,Price,InStock,ImagePath,Image,CategoryID")] Products product)
         {
             if (id != product.ProductID)
             {
@@ -125,12 +171,49 @@ namespace ABC_Retail_ST10255912_POE.Controllers
             {
                 try
                 {
+                    var existingProduct = await _context.Products.AsNoTracking().FirstOrDefaultAsync(p => p.ProductID == id);
+
+                    if (existingProduct == null)
+                    {
+                        return NotFound();
+                    }
+
+                    // Only process the image if a new one is uploaded
+                    if (product.Image != null)
+                    {
+                        // Remove the old image file if a new image is uploaded
+                        if (!string.IsNullOrEmpty(existingProduct.ImagePath))
+                        {
+                            string oldImagePath = Path.Combine(_webHostEnvironment.WebRootPath, existingProduct.ImagePath);
+                            if (System.IO.File.Exists(oldImagePath))
+                            {
+                                System.IO.File.Delete(oldImagePath);
+                            }
+                        }
+
+                        // Save the new image
+                        string uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "Images");
+                        string uniqueFileName = Guid.NewGuid().ToString() + "_" + product.Image.FileName;
+                        string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
+                        using (var stream = new FileStream(filePath, FileMode.Create))
+                        {
+                            await product.Image.CopyToAsync(stream);
+                        }
+                        product.ImagePath = Path.Combine("Images", uniqueFileName);
+                    }
+                    else
+                    {
+                        // Keep the existing image path if no new image is uploaded
+                        product.ImagePath = existingProduct.ImagePath;
+                    }
+
                     _context.Update(product);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ProductExists(product.ProductID))
+                    if (!ProductsExists(product.ProductID))
                     {
                         return NotFound();
                     }
@@ -141,47 +224,51 @@ namespace ABC_Retail_ST10255912_POE.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["CategoryID"] = new SelectList(_context.Set<Category>(), "CategoryID", "CategoryName", product.CategoryID);
             return View(product);
         }
 
+
         // GET: Products/Delete/5
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Delete(string id)
+        public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var product = await _context.Products
+            var products = await _context.Products
+                .Include(p => p.Category)
                 .FirstOrDefaultAsync(m => m.ProductID == id);
-            if (product == null)
+            if (products == null)
             {
                 return NotFound();
             }
 
-            return View(product);
+            return View(products);
         }
 
         // POST: Products/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> DeleteConfirmed(string id)
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var product = await _context.Products.FindAsync(id);
-            if (product != null)
+            var products = await _context.Products.FindAsync(id);
+            if (products != null)
             {
-                _context.Products.Remove(product);
-                await _context.SaveChangesAsync();
+                _context.Products.Remove(products);
             }
 
+            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool ProductExists(string id)
+        private bool ProductsExists(int id)
         {
             return _context.Products.Any(e => e.ProductID == id);
         }
     }
 }
+

@@ -13,8 +13,24 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\b5742d29-5c50-4ab9-9cbd-d0dcc96d71f8_birb.jpeg",
+      "PackagePath": "staticwebassets\\images\\b5742d29-5c50-4ab9-9cbd-d0dcc96d71f8_birb.jpeg"
+    },
+    {
       "Id": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\cursor.png",
       "PackagePath": "staticwebassets\\images\\cursor.png"
+    },
+    {
+      "Id": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\f8a9c634-dbc0-4ec9-98aa-5aeac613cd30_birb.jpeg",
+      "PackagePath": "staticwebassets\\images\\f8a9c634-dbc0-4ec9-98aa-5aeac613cd30_birb.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\fc468d99-9dd5-49a3-828f-12b89ff1efe8_birb.jpeg",
+      "PackagePath": "staticwebassets\\images\\fc468d99-9dd5-49a3-828f-12b89ff1efe8_birb.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\fcbc82c3-3396-49de-a918-505e05f46d1a_WizardFrogSmol.png",
+      "PackagePath": "staticwebassets\\images\\fcbc82c3-3396-49de-a918-505e05f46d1a_WizardFrogSmol.png"
     },
     {
       "Id": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\shopping-bag.png",

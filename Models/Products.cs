@@ -1,24 +1,38 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using ABC_Retail_ST10255912_POE.Models;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ABC_Retail_ST10255912_POE.Models
 {
     public class Products
     {
         [Key]
-        public string ?ProductID { get; set; }
-        [Required]
-        public string ?Title { get; set; }
-        [Required]
-        public string ?Description { get; set; }
-        [Required]
-        public decimal Price { get; set; }
-        [Required]
-        public int Quantity { get; set; }
-        [Required]
-        public int CategoryID { get; set; }
-        [Required]
-        public string ?ImagePath { get; set; }
+        public int ProductID { get; set; }
+        [Display(Name = "Product Name")]
+        public string? ProductName { get; set; }
 
-        public bool OnSale { get; set; }
+        public decimal Price { get; set; }
+
+        //Formatted Price
+        [NotMapped]
+        public string FormattedPrice
+        {
+            get
+            {
+                return $"R{Price:N2}";
+            }
+        }
+
+        [Display(Name = "In Stock")]
+        public bool InStock { get; set; }
+        public string? ImagePath { get; set; }
+        public int CategoryID { get; set; }
+
+        [NotMapped]
+        public IFormFile? Image { get; set; }
+
+        //Navigation Properties
+        public virtual Category? Category { get; set; }
     }
 }

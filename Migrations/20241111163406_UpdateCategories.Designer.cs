@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ABC_Retail_ST10255912_POE.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241111033136_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20241111163406_UpdateCategories")]
+    partial class UpdateCategories
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -25,7 +25,25 @@ namespace ABC_Retail_ST10255912_POE.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("ABC_Retail_ST10255912_POE.Models.CartItems", b =>
+            modelBuilder.Entity("ABC_Retail_ST10255912_POE.Models.Cart", b =>
+                {
+                    b.Property<int>("CartID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CartID"));
+
+                    b.Property<string>("UserID")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("CartID");
+
+                    b.HasIndex("UserID");
+
+                    b.ToTable("Carts");
+                });
+
+            modelBuilder.Entity("ABC_Retail_ST10255912_POE.Models.CartItem", b =>
                 {
                     b.Property<int>("CartItemID")
                         .ValueGeneratedOnAdd()
@@ -39,9 +57,6 @@ namespace ABC_Retail_ST10255912_POE.Migrations
                     b.Property<int>("ProductID")
                         .HasColumnType("int");
 
-                    b.Property<int>("Quantity")
-                        .HasColumnType("int");
-
                     b.HasKey("CartItemID");
 
                     b.HasIndex("CartID");
@@ -51,26 +66,7 @@ namespace ABC_Retail_ST10255912_POE.Migrations
                     b.ToTable("CartItems");
                 });
 
-            modelBuilder.Entity("ABC_Retail_ST10255912_POE.Models.Carts", b =>
-                {
-                    b.Property<int>("CartID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CartID"));
-
-                    b.Property<int>("CustomerID")
-                        .HasColumnType("int");
-
-                    b.Property<decimal>("TotalPrice")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.HasKey("CartID");
-
-                    b.ToTable("Carts");
-                });
-
-            modelBuilder.Entity("ABC_Retail_ST10255912_POE.Models.Categories", b =>
+            modelBuilder.Entity("ABC_Retail_ST10255912_POE.Models.Category", b =>
                 {
                     b.Property<int>("CategoryID")
                         .ValueGeneratedOnAdd()
@@ -79,56 +75,36 @@ namespace ABC_Retail_ST10255912_POE.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CategoryID"));
 
                     b.Property<string>("CategoryName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("CategoryID");
 
                     b.ToTable("Categories");
+
+                    b.HasData(
+                        new
+                        {
+                            CategoryID = 1,
+                            CategoryName = "1950s"
+                        },
+                        new
+                        {
+                            CategoryID = 2,
+                            CategoryName = "1960s"
+                        },
+                        new
+                        {
+                            CategoryID = 3,
+                            CategoryName = "1970s"
+                        },
+                        new
+                        {
+                            CategoryID = 4,
+                            CategoryName = "1980s"
+                        });
                 });
 
-            modelBuilder.Entity("ABC_Retail_ST10255912_POE.Models.Customers", b =>
-                {
-                    b.Property<int>("CustomerID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CustomerID"));
-
-                    b.Property<string>("Address")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("FirstName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("LastName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Password")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("PhoneNum")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Username")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("CustomerID");
-
-                    b.ToTable("Customers");
-                });
-
-            modelBuilder.Entity("ABC_Retail_ST10255912_POE.Models.Orders", b =>
+            modelBuilder.Entity("ABC_Retail_ST10255912_POE.Models.Order", b =>
                 {
                     b.Property<int>("OrderID")
                         .ValueGeneratedOnAdd()
@@ -136,21 +112,55 @@ namespace ABC_Retail_ST10255912_POE.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("OrderID"));
 
-                    b.Property<int>("CustomerID")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("OrderDate")
+                    b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<bool>("Status")
-                        .HasColumnType("bit");
+                    b.Property<DateTime>("ModifiedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("OrderStatus")
+                        .HasColumnType("int");
 
                     b.Property<decimal>("TotalPrice")
                         .HasColumnType("decimal(18,2)");
 
+                    b.Property<string>("UserID")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("UserOrderNumber")
+                        .HasColumnType("int");
+
                     b.HasKey("OrderID");
 
-                    b.ToTable("Orders");
+                    b.HasIndex("UserID");
+
+                    b.ToTable("Order");
+                });
+
+            modelBuilder.Entity("ABC_Retail_ST10255912_POE.Models.OrderItem", b =>
+                {
+                    b.Property<int>("OrderItemID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("OrderItemID"));
+
+                    b.Property<int>("OrderID")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("ProductID")
+                        .HasColumnType("int");
+
+                    b.HasKey("OrderItemID");
+
+                    b.HasIndex("OrderID");
+
+                    b.HasIndex("ProductID");
+
+                    b.ToTable("OrderItem");
                 });
 
             modelBuilder.Entity("ABC_Retail_ST10255912_POE.Models.Products", b =>
@@ -161,32 +171,24 @@ namespace ABC_Retail_ST10255912_POE.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ProductID"));
 
-                    b.Property<string>("CategoryID")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("CategoryID")
+                        .HasColumnType("int");
 
                     b.Property<string>("ImagePath")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("OnSale")
+                    b.Property<bool>("InStock")
                         .HasColumnType("bit");
 
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<int>("Quantity")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Title")
-                        .IsRequired()
+                    b.Property<string>("ProductName")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ProductID");
+
+                    b.HasIndex("CategoryID");
 
                     b.ToTable("Products");
                 });
@@ -393,11 +395,48 @@ namespace ABC_Retail_ST10255912_POE.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("ABC_Retail_ST10255912_POE.Models.CartItems", b =>
+            modelBuilder.Entity("ABC_Retail_ST10255912_POE.Models.Cart", b =>
                 {
-                    b.HasOne("ABC_Retail_ST10255912_POE.Models.Carts", "Cart")
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserID");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("ABC_Retail_ST10255912_POE.Models.CartItem", b =>
+                {
+                    b.HasOne("ABC_Retail_ST10255912_POE.Models.Cart", "Cart")
                         .WithMany("CartItems")
                         .HasForeignKey("CartID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ABC_Retail_ST10255912_POE.Models.Products", "Products")
+                        .WithMany()
+                        .HasForeignKey("ProductID")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Cart");
+
+                    b.Navigation("Products");
+                });
+
+            modelBuilder.Entity("ABC_Retail_ST10255912_POE.Models.Order", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserID");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("ABC_Retail_ST10255912_POE.Models.OrderItem", b =>
+                {
+                    b.HasOne("ABC_Retail_ST10255912_POE.Models.Order", "Order")
+                        .WithMany("OrderItems")
+                        .HasForeignKey("OrderID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -407,9 +446,20 @@ namespace ABC_Retail_ST10255912_POE.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Cart");
+                    b.Navigation("Order");
 
                     b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("ABC_Retail_ST10255912_POE.Models.Products", b =>
+                {
+                    b.HasOne("ABC_Retail_ST10255912_POE.Models.Category", "Category")
+                        .WithMany("Products")
+                        .HasForeignKey("CategoryID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Category");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -463,9 +513,19 @@ namespace ABC_Retail_ST10255912_POE.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("ABC_Retail_ST10255912_POE.Models.Carts", b =>
+            modelBuilder.Entity("ABC_Retail_ST10255912_POE.Models.Cart", b =>
                 {
                     b.Navigation("CartItems");
+                });
+
+            modelBuilder.Entity("ABC_Retail_ST10255912_POE.Models.Category", b =>
+                {
+                    b.Navigation("Products");
+                });
+
+            modelBuilder.Entity("ABC_Retail_ST10255912_POE.Models.Order", b =>
+                {
+                    b.Navigation("OrderItems");
                 });
 #pragma warning restore 612, 618
         }

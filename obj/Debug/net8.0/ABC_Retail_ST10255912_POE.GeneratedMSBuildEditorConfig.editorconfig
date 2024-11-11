@@ -96,8 +96,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/caleb/source/repos/ABC_Retail_ST10255912_POE/ABC_Retail_ST10255912_POE/Views/Carts/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydHNcSW5kZXguY3NodG1s
+[C:/Users/caleb/source/repos/ABC_Retail_ST10255912_POE/ABC_Retail_ST10255912_POE/Views/Carts/ViewCart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydHNcVmlld0NhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/caleb/source/repos/ABC_Retail_ST10255912_POE/ABC_Retail_ST10255912_POE/Views/Checkout/ConfirmOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlY2tvdXRcQ29uZmlybU9yZGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/caleb/source/repos/ABC_Retail_ST10255912_POE/ABC_Retail_ST10255912_POE/Views/Checkout/OrderConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlY2tvdXRcT3JkZXJDb25maXJtYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/caleb/source/repos/ABC_Retail_ST10255912_POE/ABC_Retail_ST10255912_POE/Views/Checkout/OrderDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlY2tvdXRcT3JkZXJEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/caleb/source/repos/ABC_Retail_ST10255912_POE/ABC_Retail_ST10255912_POE/Views/Home/AboutUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dFVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/caleb/source/repos/ABC_Retail_ST10255912_POE/ABC_Retail_ST10255912_POE/Views/Home/ContactUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0VXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/caleb/source/repos/ABC_Retail_ST10255912_POE/ABC_Retail_ST10255912_POE/Views/Home/Index.cshtml]
@@ -106,6 +126,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/caleb/source/repos/ABC_Retail_ST10255912_POE/ABC_Retail_ST10255912_POE/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/caleb/source/repos/ABC_Retail_ST10255912_POE/ABC_Retail_ST10255912_POE/Views/Orders/AdminIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXEFkbWluSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/caleb/source/repos/ABC_Retail_ST10255912_POE/ABC_Retail_ST10255912_POE/Views/Orders/ClientIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXENsaWVudEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/caleb/source/repos/ABC_Retail_ST10255912_POE/ABC_Retail_ST10255912_POE/Views/Orders/ClientOrderHistory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXENsaWVudE9yZGVySGlzdG9yeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/caleb/source/repos/ABC_Retail_ST10255912_POE/ABC_Retail_ST10255912_POE/Views/Orders/Create.cshtml]
@@ -124,8 +156,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/caleb/source/repos/ABC_Retail_ST10255912_POE/ABC_Retail_ST10255912_POE/Views/Orders/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJzXEluZGV4LmNzaHRtbA==
+[C:/Users/caleb/source/repos/ABC_Retail_ST10255912_POE/ABC_Retail_ST10255912_POE/Views/Products/AdminIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcQWRtaW5JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/caleb/source/repos/ABC_Retail_ST10255912_POE/ABC_Retail_ST10255912_POE/Views/Products/ClientIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcQ2xpZW50SW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/caleb/source/repos/ABC_Retail_ST10255912_POE/ABC_Retail_ST10255912_POE/Views/Products/Create.cshtml]
@@ -142,10 +178,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/caleb/source/repos/ABC_Retail_ST10255912_POE/ABC_Retail_ST10255912_POE/Views/Products/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRWRpdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/caleb/source/repos/ABC_Retail_ST10255912_POE/ABC_Retail_ST10255912_POE/Views/Products/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/caleb/source/repos/ABC_Retail_ST10255912_POE/ABC_Retail_ST10255912_POE/Views/Shared/Error.cshtml]

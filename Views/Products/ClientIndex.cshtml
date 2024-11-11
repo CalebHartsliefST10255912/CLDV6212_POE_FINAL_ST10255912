@@ -4,7 +4,7 @@
 @inject SignInManager<IdentityUser> SignInManager
 
 @{
-    ViewData["Title"] = "Products";
+    ViewData["Title"] = "Our Products";
 }
 
 <div class="container mt-4">
@@ -23,20 +23,29 @@
             <div class="col-md-4 mb-4">
                 <div class="card product-card h-100" id="product-card-@product.ProductID"
                      onclick="expandCard(event, @product.ProductID)">
-                    <img src="@product.ImagePath" class="card-img-top" alt="@product.Title">
+                    <img src="@Url.Content("~/" + product.ImagePath)" class="card-img-top" alt="@product.ProductName">
                     <div class="card-body">
-                        <h5 class="card-title">@product.Title</h5>
-                        <p class="card-text">@product.Description</p>
-                        <p class="card-text"><strong>Price:</strong> $@product.Price</p>
-                        <a asp-action="Details" asp-route-id="@product.ProductID" class="btn btn-primary">View Details</a>
-                        <form asp-action="AddToCart" asp-controller="Carts" method="post">
-                            <input type="hidden" name="productId" value="@product.ProductID" />
-                            <input type="hidden" name="quantity" value="1" />
-                            <button type="submit" class="btn btn-secondary">Add to Cart</button>
-                        </form>
+                        <h5 class="card-title">@product.ProductName</h5>
+                        <p class="card-text">@product?.Category?.CategoryName</p>
+                        <p class="card-text"><strong>Price:</strong> @product.FormattedPrice</p>
+
+                        <a asp-action="Details" asp-route-id="@product.ProductID" class="category-tile">View Details</a>
+
+                        @if (product.InStock)
+                        {
+                            <form asp-controller="Carts" asp-action="AddToCart" method="post" class="d-inline">
+                                <input type="hidden" name="productId" value="@product.ProductID" />
+                                <input type="hidden" name="quantity" value="1" />
+                                <button type="submit" class="category-tile">Add to Cart</button>
+                            </form>
+                        }
+                        else
+                        {
+                            <button class="category-tile" disabled>Out of Stock</button>
+                        }
 
                         @* Conditionally show Edit and Delete options for Admin users *@
-                        @if (User.IsInRole("Admin"))
+                        @if (SignInManager.IsSignedIn(User) && User.IsInRole("Admin"))
                         {
                             <a asp-action="Edit" asp-route-id="@product.ProductID" class="btn btn-warning mt-2">Edit</a>
                             <a asp-action="Delete" asp-route-id="@product.ProductID" class="btn btn-danger mt-2">Delete</a>

@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+<!DOCTYPE html>
 <html lang="en">
 <head style="background-color: #1c1c1c; color: #f1f1f1;">
     <meta charset="utf-8" />
@@ -16,33 +18,61 @@
 </head>
 
 <body style="background-color: #1c1c1c; color: #f1f1f1;">
-    <!-- Custom Cursor -->
+
     <div class="custom-cursor"></div>
 
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-[#1c1c1c] mb-3">
-            <div class="container-fluid d-flex justify-content-center align-items-center py-3">
-                <ul class="navbar-nav d-flex align-items-center">
-                    <li class="nav-item">
-                        <a class="nav-link text-white font-links" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white font-links" asp-area="" asp-controller="Products" asp-action="Index">Products</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white font-Monoton display-5 mx-5" asp-area="" asp-controller="Home" asp-action="Index">ABC Retail</a>
-                    </li>
-                    <li class="nav-item position-relative">
-                        <a class="nav-link text-white font-links" asp-area="" asp-controller="Carts" asp-action="Index" title="View Cart">
-                            <img src="~/images/shopping-bag.png" alt="Cart" style="width: 24px;" />
-                            <span id="cart-indicator" class="badge bg-danger position-absolute top-0 start-100 translate-middle">0</span>
-                        </a>
-                    </li>
+            <div class="container-fluid d-flex align-items-center py-3 position-relative">
+                <!-- Left-aligned Links -->
+                <div class="d-flex me-auto">
+                    <ul class="navbar-nav d-flex align-items-center">
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            @if (User.IsInRole("Admin"))
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-white font-links" asp-area="" asp-controller="Products" asp-action="Index">Products</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white font-links" asp-area="" asp-controller="Orders" asp-action="Index">Orders</a>
+                                </li>
+                            }
+                            else
+                            {
+                                <li class="nav-item @(ViewContext.RouteData.Values["action"]?.ToString() == "Index" && ViewContext.RouteData.Values["controller"]?.ToString() == "Home" ? "active" : "")">
+                                    <a class="nav-link text-white font-links" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                                </li>
+                                <li class="nav-item @(ViewContext.RouteData.Values["controller"]?.ToString() == "Products" ? "active" : "")">
+                                    <a class="nav-link text-white font-links" asp-area="" asp-controller="Products" asp-action="Index">Products</a>
+                                </li>
+                            }
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-white font-links" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white font-links" asp-area="" asp-controller="Products" asp-action="Index">Products</a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+
+                <!-- Centered Brand Name -->
+                <a class="nav-link position-absolute start-50 translate-middle-x display-5 text-white font-Monoton" asp-area="" asp-controller="Home" asp-action="Index">
+                    ABC Retail
+                </a>
+
+                <!-- Right-aligned Links -->
+                <div class="d-flex ms-auto">
                     <partial name="_LoginPartial" />
-                </ul>
+                </div>
             </div>
         </nav>
     </header>
+
 
     <div class="container">
         <main role="main" class="pb-3">
@@ -70,23 +100,9 @@
             </div>
         </div>
     </footer>
-
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-    <script>
-        // Function to update the cart indicator count
-        function updateCartIndicator() {
-            fetch('/Carts/GetCartItemCount')
-                .then(response => response.json())
-                .then(count => {
-                    document.getElementById("cart-indicator").textContent = count;
-                });
-        }
-
-        // Update cart indicator on page load
-        document.addEventListener("DOMContentLoaded", updateCartIndicator);
-    </script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
