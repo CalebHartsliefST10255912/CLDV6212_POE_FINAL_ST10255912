@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ABC_Retail_ST10255912_POE.Controllers
@@ -14,6 +15,13 @@ namespace ABC_Retail_ST10255912_POE.Controllers
         // GET: HomeController/Details/5
         public ActionResult Details(int id)
         {
+            return View();
+        }
+
+        [Authorize]
+        public IActionResult Dashboard()
+        {
+            // Only accessible if the user is logged in
             return View();
         }
 

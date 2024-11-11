@@ -1,0 +1,36 @@
+﻿@model ABC_Retail_ST10255912_POE.Models.Carts
+
+@{
+    ViewData["Title"] = "Cart";
+}
+
+<div class="container mt-4">
+    <h1 class="text-center mb-4">Your Cart</h1>
+
+    @if (Model?.CartItems != null && Model.CartItems.Any())
+    {
+        <div class="row">
+            @foreach (var item in Model.CartItems)
+            {
+                <div class="col-md-4 mb-4">
+                    <div class="card product-card h-100">
+                        <img src="@item.Product.ImagePath" class="card-img-top" alt="@item.Product.Title">
+                        <div class="card-body">
+                            <h5 class="card-title">@item.Product.Title</h5>
+                            <p class="card-text"><strong>Price:</strong> $@item.Product.Price</p>
+                            <p class="card-text"><strong>Quantity:</strong> @item.Quantity</p>
+                            <p class="card-text"><strong>Total:</strong> $@(item.Product.Price * item.Quantity)</p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+        <div class="text-center mt-4">
+            <h3>Total Price: $@Model.TotalPrice</h3>
+        </div>
+    }
+    else
+    {
+        <p class="text-center">Your cart is empty.</p>
+    }
+</div>

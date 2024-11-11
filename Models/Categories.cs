@@ -5,8 +5,8 @@ namespace ABC_Retail_ST10255912_POE.Models
     public class Categories
     {
         [Key]
-        public string CategoryID { get; set; }
+        public int CategoryID { get; set; }
         [Required]
-        public string CategoryName { get; set; }
+        public string ?CategoryName { get; set; }
     }
 }

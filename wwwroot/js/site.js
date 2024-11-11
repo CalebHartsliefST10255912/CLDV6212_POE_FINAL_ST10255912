@@ -20,6 +20,13 @@ function expandCard(event, productId) {
 
     // Update the currently expanded card if the clicked card is expanded, otherwise set it to null
     currentlyExpandedCard = card.classList.contains('expanded') ? card : null;
+
+    // Toggle the document click listener
+    if (currentlyExpandedCard) {
+        document.addEventListener('click', handleClickOutside);
+    } else {
+        document.removeEventListener('click', handleClickOutside);
+    }
 }
 
 function collapseCard() {
@@ -28,12 +35,18 @@ function collapseCard() {
         document.getElementById('overlay').style.display = 'none';
         currentlyExpandedCard = null;
     }
+    document.removeEventListener('click', handleClickOutside);
 }
 
-// Listen for clicks outside the card to collapse it
-document.addEventListener('click', function handleClickOutside(e) {
+// Handle clicks outside the card to collapse it
+function handleClickOutside(e) {
     if (currentlyExpandedCard && !currentlyExpandedCard.contains(e.target)) {
-        collapseCard(); // Collapse the card on outside click
-        document.removeEventListener('click', handleClickOutside);
+        collapseCard();
     }
-});
+}
+
+function confirmLogout() {
+    if (confirm("Are you sure you want to log out?")) {
+        document.getElementById("logoutForm").submit();
+    }
+}

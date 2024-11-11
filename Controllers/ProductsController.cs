@@ -1,83 +1,187 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using ABC_Retail_ST10255912_POE.Data;
+using ABC_Retail_ST10255912_POE.Models;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using System.Linq;
+using Microsoft.IdentityModel.Tokens;
 
 namespace ABC_Retail_ST10255912_POE.Controllers
 {
     public class ProductsController : Controller
     {
-        // GET: ProductsController
-        public ActionResult Index()
+        private readonly ApplicationDbContext _context;
+
+        public ProductsController(ApplicationDbContext context)
         {
+            _context = context;
+        }
+
+        // GET: Products
+        public async Task<IActionResult> Index()
+        {
+            var products = await _context.Products.ToListAsync();
+            return View(products);
+        }
+
+        // GET: Products/Details/5
+        public async Task<IActionResult> Details(string id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var product = await _context.Products
+                .FirstOrDefaultAsync(m => m.ProductID == id);
+            if (product == null)
+            {
+                return NotFound();
+            }
+
+            return View(product);
+        }
+
+        // GET: Products/Create
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> Create()
+        {
+            ViewBag.Categories = await _context.Categories.ToListAsync();
             return View();
         }
 
-        // GET: ProductsController/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
-
-        // GET: ProductsController/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: ProductsController/Create
+        // POST: Products/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> Create(Products product)
         {
-            try
+            if (ModelState.IsValid)
             {
+                // Generate a custom ProductID
+                product.ProductID = await GenerateNextProductID();
+
+                _context.Add(product);
+                await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            catch
-            {
-                return View();
-            }
+            return View(product);
         }
 
-        // GET: ProductsController/Edit/5
-        public ActionResult Edit(int id)
+        // Method to generate next ProductID
+        private async Task<string> GenerateNextProductID()
         {
-            return View();
+            // Get the last ProductID if available
+            var lastProduct = await _context.Products
+                .OrderByDescending(p => p.ProductID)
+                .FirstOrDefaultAsync();
+
+            if (lastProduct == null || string.IsNullOrEmpty(lastProduct.ProductID))
+            {
+                return "PR001"; // Start with PR001 if no products exist
+            }
+
+            // Extract the numeric part from ProductID and increment it
+            string numericPart = lastProduct.ProductID.Substring(2); // Strip "PR"
+            int number = int.Parse(numericPart) + 1;
+
+            // Format the new ProductID with leading zeros (up to 3 digits)
+            return $"PR{number:D3}";
         }
 
-        // POST: ProductsController/Edit/5
+        // GET: Products/Edit/5
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> Edit(string id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var product = await _context.Products.FindAsync(id);
+            if (product == null)
+            {
+                return NotFound();
+            }
+
+            ViewBag.Categories = new SelectList(await _context.Categories.ToListAsync(), "CategoryID", "CategoryName");
+            return View(product);
+        }
+
+        // POST: Products/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> Edit(string id, [Bind("ProductID,Title,Description,Price,Quantity,CategoryID,ImagePath,OnSale")] Products product)
         {
-            try
+            if (id != product.ProductID)
             {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(product);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!ProductExists(product.ProductID))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
                 return RedirectToAction(nameof(Index));
             }
-            catch
-            {
-                return View();
-            }
+            return View(product);
         }
 
-        // GET: ProductsController/Delete/5
-        public ActionResult Delete(int id)
+        // GET: Products/Delete/5
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> Delete(string id)
         {
-            return View();
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var product = await _context.Products
+                .FirstOrDefaultAsync(m => m.ProductID == id);
+            if (product == null)
+            {
+                return NotFound();
+            }
+
+            return View(product);
         }
 
-        // POST: ProductsController/Delete/5
-        [HttpPost]
+        // POST: Products/Delete/5
+        [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> DeleteConfirmed(string id)
         {
-            try
+            var product = await _context.Products.FindAsync(id);
+            if (product != null)
             {
-                return RedirectToAction(nameof(Index));
+                _context.Products.Remove(product);
+                await _context.SaveChangesAsync();
             }
-            catch
-            {
-                return View();
-            }
+
+            return RedirectToAction(nameof(Index));
+        }
+
+        private bool ProductExists(string id)
+        {
+            return _context.Products.Any(e => e.ProductID == id);
         }
     }
 }

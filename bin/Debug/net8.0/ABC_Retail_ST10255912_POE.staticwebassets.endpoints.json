@@ -28,7 +28,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 07 Nov 2024 22:53:00 GMT"
+          "Value": "Mon, 11 Nov 2024 05:02:58 GMT"
         }
       ],
       "EndpointProperties": [
@@ -73,7 +73,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 07 Nov 2024 22:53:00 GMT"
+          "Value": "Mon, 11 Nov 2024 05:02:58 GMT"
         }
       ],
       "EndpointProperties": [
@@ -2330,7 +2330,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 08 Nov 2024 19:10:40 GMT"
+          "Value": "Sun, 10 Nov 2024 14:30:28 GMT"
         }
       ],
       "EndpointProperties": [
@@ -2367,7 +2367,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 08 Nov 2024 19:10:40 GMT"
+          "Value": "Sun, 10 Nov 2024 14:30:28 GMT"
         }
       ],
       "EndpointProperties": [
@@ -2714,51 +2714,6 @@
       ]
     },
     {
-      "Route": "js/site.0743z76n98.js",
-      "AssetFile": "js/site.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1532"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"BCnXo4Gd1buwjU6bgaGp4VCantIcUq0Dz9gqE049FWI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 08 Nov 2024 19:10:08 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "0743z76n98"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-BCnXo4Gd1buwjU6bgaGp4VCantIcUq0Dz9gqE049FWI="
-        },
-        {
-          "Name": "label",
-          "Value": "js/site.js"
-        }
-      ]
-    },
-    {
       "Route": "js/site.js",
       "AssetFile": "js/site.js",
       "Selectors": [],
@@ -2773,7 +2728,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1532"
+          "Value": "1838"
         },
         {
           "Name": "Content-Type",
@@ -2781,17 +2736,62 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"BCnXo4Gd1buwjU6bgaGp4VCantIcUq0Dz9gqE049FWI=\""
+          "Value": "\"dLnupd/nAhySu/jrve/xO+xIDXUlcMTKKQUVAA4cxAY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 08 Nov 2024 19:10:08 GMT"
+          "Value": "Mon, 11 Nov 2024 04:40:04 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-BCnXo4Gd1buwjU6bgaGp4VCantIcUq0Dz9gqE049FWI="
+          "Value": "sha256-dLnupd/nAhySu/jrve/xO+xIDXUlcMTKKQUVAA4cxAY="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.wvpmqsxbvs.js",
+      "AssetFile": "js/site.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1838"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dLnupd/nAhySu/jrve/xO+xIDXUlcMTKKQUVAA4cxAY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 11 Nov 2024 04:40:04 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wvpmqsxbvs"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dLnupd/nAhySu/jrve/xO+xIDXUlcMTKKQUVAA4cxAY="
+        },
+        {
+          "Name": "label",
+          "Value": "js/site.js"
         }
       ]
     },

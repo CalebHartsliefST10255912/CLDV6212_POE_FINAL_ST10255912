@@ -5,20 +5,20 @@ namespace ABC_Retail_ST10255912_POE.Models
     public class Customers
     {
         [Key]
-        public string CustomerID { get; set; }
+        public int CustomerID { get; set; }
         [Required]
-        public string FirstName { get; set; }
+        public string ?FirstName { get; set; }
         [Required]
-        public string LastName { get; set; }
+        public string ?LastName { get; set; }
         [Required]
-        public string PhoneNum { get; set; }
+        public string ?PhoneNum { get; set; }
         [Required]
-        public string Email { get; set; }
+        public string ?Email { get; set; }
         [Required]
-        public string Username { get; set; }
+        public string ?Username { get; set; }
         [Required] 
-        public string Password { get; set; }
+        public string ?Password { get; set; }
         [Required]
-        public string Address { get; set; }
+        public string ?Address { get; set; }
     }
 }

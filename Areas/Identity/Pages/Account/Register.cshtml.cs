@@ -10,6 +10,8 @@ using System.Text;
 using System.Text.Encodings.Web;
 using System.Threading;
 using System.Threading.Tasks;
+using ABC_Retail_ST10255912_POE.Data;
+using ABC_Retail_ST10255912_POE.Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -29,13 +31,15 @@ namespace ABC_Retail_ST10255912_POE.Areas.Identity.Pages.Account
         private readonly IUserEmailStore<IdentityUser> _emailStore;
         private readonly ILogger<RegisterModel> _logger;
         private readonly IEmailSender _emailSender;
+        private readonly ApplicationDbContext _context;
 
         public RegisterModel(
             UserManager<IdentityUser> userManager,
             IUserStore<IdentityUser> userStore,
             SignInManager<IdentityUser> signInManager,
             ILogger<RegisterModel> logger,
-            IEmailSender emailSender)
+            IEmailSender emailSender,
+            ApplicationDbContext context)
         {
             _userManager = userManager;
             _userStore = userStore;
@@ -43,6 +47,7 @@ namespace ABC_Retail_ST10255912_POE.Areas.Identity.Pages.Account
             _signInManager = signInManager;
             _logger = logger;
             _emailSender = emailSender;
+            _context = context;
         }
 
         /// <summary>
@@ -79,6 +84,25 @@ namespace ABC_Retail_ST10255912_POE.Areas.Identity.Pages.Account
             [Display(Name = "Email")]
             public string Email { get; set; }
 
+            [Required]
+            [Display(Name = "Username")]
+            public string Username { get; set; }
+
+            [Required]
+            [Display(Name = "First Name")]
+            public string FirstName { get; set; }
+
+            [Required]
+            [Display(Name = "Last Name")]
+            public string LastName { get; set; }
+
+            [Required]
+            [Display(Name = "Phone Number")]
+            public string PhoneNum { get; set; }
+
+            [Display(Name = "Address")]
+            public string Address { get; set; }
+
             /// <summary>
             ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
             ///     directly from your code. This API may change or be removed in future releases.
@@ -99,6 +123,28 @@ namespace ABC_Retail_ST10255912_POE.Areas.Identity.Pages.Account
             public string ConfirmPassword { get; set; }
         }
 
+        private int GenerateCustomerId()
+        {
+            // Get the last customer ID in the database
+            var lastCustomer = _context.Customers
+                .OrderByDescending(c => c.CustomerID)
+                .FirstOrDefault();
+
+            // Start with ID 1 if there are no customers
+            if (lastCustomer == null)
+            {
+                return 1;
+            }
+
+            // Increment the last CustomerID by 1
+            var lastIdNumber = lastCustomer.CustomerID;
+            var newIdNumber = lastIdNumber + 1;
+
+            // Log or check newIdNumber for debugging
+            Console.WriteLine("Generated CustomerID: " + newIdNumber); // Debugging line
+            return newIdNumber;
+        }
+
 
         public async Task OnGetAsync(string returnUrl = null)
         {
@@ -110,17 +156,38 @@ namespace ABC_Retail_ST10255912_POE.Areas.Identity.Pages.Account
         {
             returnUrl ??= Url.Content("~/");
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
+
             if (ModelState.IsValid)
             {
                 var user = CreateUser();
 
                 await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
                 await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
+
                 var result = await _userManager.CreateAsync(user, Input.Password);
 
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User created a new account with password.");
+
+                    // Generate the custom CustomerID
+                    var customerId = GenerateCustomerId();
+
+                    // Save the customer record
+                    var customer = new Customers
+                    {
+                        CustomerID = customerId,
+                        FirstName = Input.FirstName,
+                        LastName = Input.LastName,
+                        PhoneNum = Input.PhoneNum,
+                        Email = Input.Email,
+                        Username = Input.Username,
+                        Password = Input.Password,
+                        Address = Input.Address // Assuming Address is now nullable
+                    };
+
+                    _context.Customers.Add(customer);
+                    await _context.SaveChangesAsync();
 
                     var userId = await _userManager.GetUserIdAsync(user);
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);

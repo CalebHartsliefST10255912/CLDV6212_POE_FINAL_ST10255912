@@ -7,6 +7,6 @@ namespace ABC_Retail_ST10255912_POE.Models
         [Key]
         public int RoleID { get; set; }
         [Required]
-        public string RoleName { get; set; }
+        public string ?RoleName { get; set; }
     }
 }

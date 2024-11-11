@@ -11,30 +11,11 @@ public class ApplicationDbContext : IdentityDbContext<IdentityUser>
         : base(options) { }
 
     // DbSets for entities
-    public DbSet<Customer> Customers { get; set; }
-    public DbSet<Product> Products { get; set; }
-    public DbSet<Order> Orders { get; set; }
-    public DbSet<FileRecord> Files { get; set; }
+    public DbSet<Customers> Customers { get; set; }
+    public DbSet<Products> Products { get; set; }
+    public DbSet<Orders> Orders { get; set; }
+    public DbSet<Carts> Carts { get; set; }
+    public DbSet<CartItems> CartItems { get; set; }
+    public DbSet<Categories> Categories { get; set; }
 
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
-    {
-        base.OnModelCreating(modelBuilder);
-
-        // Configure Customer and IdentityUser relationship
-        modelBuilder.Entity<Customer>()
-            .HasOne(c => c.User)
-            .WithOne()
-            .HasForeignKey<Customer>(c => c.UserId);
-
-        // Configure Order relationships
-        modelBuilder.Entity<Order>()
-            .HasOne(o => o.Customer)
-            .WithMany(c => c.Orders)
-            .HasForeignKey(o => o.CustomerId);
-
-        modelBuilder.Entity<Order>()
-            .HasOne(o => o.Product)
-            .WithMany(p => p.Orders)
-            .HasForeignKey(o => o.ProductId);
-    }
 }

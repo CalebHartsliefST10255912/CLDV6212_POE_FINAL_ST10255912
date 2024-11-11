@@ -1,4 +1,7 @@
-﻿@model IEnumerable<ABC_Retail_ST10255912_POE.Models.Product>
+﻿@model IEnumerable<ABC_Retail_ST10255912_POE.Models.Products>
+@using Microsoft.AspNetCore.Identity
+@inject UserManager<IdentityUser> UserManager
+@inject SignInManager<IdentityUser> SignInManager
 
 @{
     ViewData["Title"] = "Products";
@@ -6,19 +9,38 @@
 
 <div class="container mt-4">
     <h1 class="text-center mb-4">Our Products</h1>
+
+    @if (SignInManager.IsSignedIn(User) && User.IsInRole("Admin"))
+    {
+        <div class="mb-4 text-center">
+            <a asp-action="Create" class="btn btn-success">Add Product</a>
+        </div>
+    }
+
     <div class="row">
         @foreach (var product in Model)
         {
             <div class="col-md-4 mb-4">
-                <div class="card product-card h-100" id="product-card-@product.ProductId"
-                     onclick="expandCard(event, @product.ProductId)">
-                    <img src="@product.ImageUrl" class="card-img-top" alt="@product.Name">
+                <div class="card product-card h-100" id="product-card-@product.ProductID"
+                     onclick="expandCard(event, @product.ProductID)">
+                    <img src="@product.ImagePath" class="card-img-top" alt="@product.Title">
                     <div class="card-body">
-                        <h5 class="card-title">@product.Name</h5>
+                        <h5 class="card-title">@product.Title</h5>
                         <p class="card-text">@product.Description</p>
                         <p class="card-text"><strong>Price:</strong> $@product.Price</p>
-                        <a href="/Products/Details/@product.ProductId" class="btn btn-primary">View Details</a>
-                        <a href="/Cart/Add/@product.ProductId" class="btn btn-secondary">Add to Cart</a>
+                        <a asp-action="Details" asp-route-id="@product.ProductID" class="btn btn-primary">View Details</a>
+                        <form asp-action="AddToCart" asp-controller="Carts" method="post">
+                            <input type="hidden" name="productId" value="@product.ProductID" />
+                            <input type="hidden" name="quantity" value="1" />
+                            <button type="submit" class="btn btn-secondary">Add to Cart</button>
+                        </form>
+
+                        @* Conditionally show Edit and Delete options for Admin users *@
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <a asp-action="Edit" asp-route-id="@product.ProductID" class="btn btn-warning mt-2">Edit</a>
+                            <a asp-action="Delete" asp-route-id="@product.ProductID" class="btn btn-danger mt-2">Delete</a>
+                        }
                     </div>
                 </div>
             </div>
@@ -27,3 +49,19 @@
 </div>
 
 <div id="overlay" class="overlay" style="display: none;" onclick="collapseCard()"></div>
+
+<script>
+    function expandCard(event, productId) {
+        // JavaScript handling for expandCard should treat productId as an integer.
+        console.log("Product ID:", productId);
+        document.getElementById("product-card-" + productId).classList.toggle("expanded");
+        document.getElementById("overlay").style.display = "block";
+    }
+
+    function collapseCard() {
+        document.querySelectorAll(".expanded").forEach(card => {
+            card.classList.remove("expanded");
+        });
+        document.getElementById("overlay").style.display = "none";
+    }
+</script>
