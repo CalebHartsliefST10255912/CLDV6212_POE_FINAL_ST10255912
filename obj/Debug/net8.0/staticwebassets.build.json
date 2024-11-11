@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Pb54RGrJ+ClmX0i9a1JrTn+1L3BKy8KqYt1AAZLeE60=",
+  "Hash": "uTMU78I1IWDi+ARKINm8X+yK6hae99TjY5GcM7nVyuI=",
   "Source": "ABC_Retail_ST10255912_POE",
   "BasePath": "_content/ABC_Retail_ST10255912_POE",
   "Mode": "Default",
@@ -1333,8 +1333,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "uhefxlnmsm",
-      "Integrity": "IhygAsKU+tAXgurUbO4LyLmxbpbesZA9OcIQX3Bgia0=",
+      "Fingerprint": "8e1grrmov4",
+      "Integrity": "8O3QTksyZ03dWgDL13wdV7QbpIZPI4l/xC//xHF/2Ws=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -1361,6 +1361,90 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\22287779-98db-4fe4-a995-ef73e03feae2_birb.jpeg",
+      "SourceId": "ABC_Retail_ST10255912_POE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\",
+      "BasePath": "_content/ABC_Retail_ST10255912_POE",
+      "RelativePath": "images/22287779-98db-4fe4-a995-ef73e03feae2_birb#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "eqnxtrpa72",
+      "Integrity": "Zo80MflMdiYkrVqNpNlaFia8REU4t1UWFf68j96KOsI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\22287779-98db-4fe4-a995-ef73e03feae2_birb.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\36898320-6f8e-464c-aece-ae69b6def8d1_WizardFrogSmol.png",
+      "SourceId": "ABC_Retail_ST10255912_POE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\",
+      "BasePath": "_content/ABC_Retail_ST10255912_POE",
+      "RelativePath": "images/36898320-6f8e-464c-aece-ae69b6def8d1_WizardFrogSmol#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "s1juxsm5q6",
+      "Integrity": "EPO9afd/fsuITotYL3vcr7EOlxYRmZLz7YkzSChyd6s=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\36898320-6f8e-464c-aece-ae69b6def8d1_WizardFrogSmol.png"
+    },
+    {
+      "Identity": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\5cec7140-4b4e-4d6b-bed1-fcff3a6a89f1_bg.jpeg",
+      "SourceId": "ABC_Retail_ST10255912_POE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\",
+      "BasePath": "_content/ABC_Retail_ST10255912_POE",
+      "RelativePath": "images/5cec7140-4b4e-4d6b-bed1-fcff3a6a89f1_bg#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3hy6slqflu",
+      "Integrity": "+ZvjBibc8B+bm/uvvVOri1KihWWWlBJnS2K+LSyP+0Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\5cec7140-4b4e-4d6b-bed1-fcff3a6a89f1_bg.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\6aa5413f-9d34-44b6-8c68-1865405ab03f_blobbg.jpeg",
+      "SourceId": "ABC_Retail_ST10255912_POE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\",
+      "BasePath": "_content/ABC_Retail_ST10255912_POE",
+      "RelativePath": "images/6aa5413f-9d34-44b6-8c68-1865405ab03f_blobbg#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rw5wlgo7g1",
+      "Integrity": "FWXDXFRJ9uacBxKVLJKWR+jZBNUZvWB1rOPlUO0R148=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\6aa5413f-9d34-44b6-8c68-1865405ab03f_blobbg.jpeg"
+    },
+    {
       "Identity": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\b5742d29-5c50-4ab9-9cbd-d0dcc96d71f8_birb.jpeg",
       "SourceId": "ABC_Retail_ST10255912_POE",
       "SourceType": "Discovered",
@@ -1382,6 +1466,27 @@
       "OriginalItemSpec": "wwwroot\\images\\b5742d29-5c50-4ab9-9cbd-d0dcc96d71f8_birb.jpeg"
     },
     {
+      "Identity": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\c0e63994-c0a2-4212-932e-fe6781c09e2a_blobbg.jpeg",
+      "SourceId": "ABC_Retail_ST10255912_POE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\",
+      "BasePath": "_content/ABC_Retail_ST10255912_POE",
+      "RelativePath": "images/c0e63994-c0a2-4212-932e-fe6781c09e2a_blobbg#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rw5wlgo7g1",
+      "Integrity": "FWXDXFRJ9uacBxKVLJKWR+jZBNUZvWB1rOPlUO0R148=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\c0e63994-c0a2-4212-932e-fe6781c09e2a_blobbg.jpeg"
+    },
+    {
       "Identity": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\cursor.png",
       "SourceId": "ABC_Retail_ST10255912_POE",
       "SourceType": "Discovered",
@@ -1401,6 +1506,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\cursor.png"
+    },
+    {
+      "Identity": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\de8188c4-5580-4b46-9054-29e38d8f77af_github_logo.png",
+      "SourceId": "ABC_Retail_ST10255912_POE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\",
+      "BasePath": "_content/ABC_Retail_ST10255912_POE",
+      "RelativePath": "images/de8188c4-5580-4b46-9054-29e38d8f77af_github_logo#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bwhf3gahea",
+      "Integrity": "WwvhHiG52eQpCbm7pWhQN0Wa/3xvx9jsTpUWnM9plmc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\de8188c4-5580-4b46-9054-29e38d8f77af_github_logo.png"
+    },
+    {
+      "Identity": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\ed371be1-3a7b-463d-b750-eac255ae63c6_pepe_wizard.jpeg",
+      "SourceId": "ABC_Retail_ST10255912_POE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\",
+      "BasePath": "_content/ABC_Retail_ST10255912_POE",
+      "RelativePath": "images/ed371be1-3a7b-463d-b750-eac255ae63c6_pepe_wizard#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "z8t69x3fxt",
+      "Integrity": "bWm9XyoWgnbymXoYjLnsEJ38k/rjn2lW5dUaaJeKDy0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\ed371be1-3a7b-463d-b750-eac255ae63c6_pepe_wizard.jpeg"
     },
     {
       "Identity": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\f8a9c634-dbc0-4ec9-98aa-5aeac613cd30_birb.jpeg",
@@ -2750,7 +2897,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 11 Nov 2024 16:13:11 GMT"
+          "Value": "Mon, 11 Nov 2024 19:47:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2787,7 +2934,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 11 Nov 2024 16:13:11 GMT"
+          "Value": "Mon, 11 Nov 2024 19:47:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2832,7 +2979,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 11 Nov 2024 16:13:11 GMT"
+          "Value": "Mon, 11 Nov 2024 19:47:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2877,7 +3024,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 11 Nov 2024 16:13:11 GMT"
+          "Value": "Mon, 11 Nov 2024 19:47:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2892,6 +3039,51 @@
       ]
     },
     {
+      "Route": "css/site.8e1grrmov4.css",
+      "AssetFile": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4685"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8O3QTksyZ03dWgDL13wdV7QbpIZPI4l/xC//xHF/2Ws=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 11 Nov 2024 19:17:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8e1grrmov4"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8O3QTksyZ03dWgDL13wdV7QbpIZPI4l/xC//xHF/2Ws="
+        }
+      ]
+    },
+    {
       "Route": "css/site.css",
       "AssetFile": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\css\\site.css",
       "Selectors": [],
@@ -2902,7 +3094,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5120"
+          "Value": "4685"
         },
         {
           "Name": "Content-Type",
@@ -2910,11 +3102,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"IhygAsKU+tAXgurUbO4LyLmxbpbesZA9OcIQX3Bgia0=\""
+          "Value": "\"8O3QTksyZ03dWgDL13wdV7QbpIZPI4l/xC//xHF/2Ws=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 11 Nov 2024 17:24:35 GMT"
+          "Value": "Mon, 11 Nov 2024 19:17:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2924,52 +3116,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-IhygAsKU+tAXgurUbO4LyLmxbpbesZA9OcIQX3Bgia0="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.uhefxlnmsm.css",
-      "AssetFile": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\css\\site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5120"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"IhygAsKU+tAXgurUbO4LyLmxbpbesZA9OcIQX3Bgia0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 11 Nov 2024 17:24:35 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "uhefxlnmsm"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-IhygAsKU+tAXgurUbO4LyLmxbpbesZA9OcIQX3Bgia0="
+          "Value": "sha256-8O3QTksyZ03dWgDL13wdV7QbpIZPI4l/xC//xHF/2Ws="
         }
       ]
     },
@@ -5276,6 +5423,334 @@
       ]
     },
     {
+      "Route": "images/22287779-98db-4fe4-a995-ef73e03feae2_birb.eqnxtrpa72.jpeg",
+      "AssetFile": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\22287779-98db-4fe4-a995-ef73e03feae2_birb.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24714"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Zo80MflMdiYkrVqNpNlaFia8REU4t1UWFf68j96KOsI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 11 Nov 2024 19:32:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "eqnxtrpa72"
+        },
+        {
+          "Name": "label",
+          "Value": "images/22287779-98db-4fe4-a995-ef73e03feae2_birb.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Zo80MflMdiYkrVqNpNlaFia8REU4t1UWFf68j96KOsI="
+        }
+      ]
+    },
+    {
+      "Route": "images/22287779-98db-4fe4-a995-ef73e03feae2_birb.jpeg",
+      "AssetFile": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\22287779-98db-4fe4-a995-ef73e03feae2_birb.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24714"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Zo80MflMdiYkrVqNpNlaFia8REU4t1UWFf68j96KOsI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 11 Nov 2024 19:32:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Zo80MflMdiYkrVqNpNlaFia8REU4t1UWFf68j96KOsI="
+        }
+      ]
+    },
+    {
+      "Route": "images/36898320-6f8e-464c-aece-ae69b6def8d1_WizardFrogSmol.png",
+      "AssetFile": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\36898320-6f8e-464c-aece-ae69b6def8d1_WizardFrogSmol.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1881338"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EPO9afd/fsuITotYL3vcr7EOlxYRmZLz7YkzSChyd6s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 11 Nov 2024 19:32:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EPO9afd/fsuITotYL3vcr7EOlxYRmZLz7YkzSChyd6s="
+        }
+      ]
+    },
+    {
+      "Route": "images/36898320-6f8e-464c-aece-ae69b6def8d1_WizardFrogSmol.s1juxsm5q6.png",
+      "AssetFile": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\36898320-6f8e-464c-aece-ae69b6def8d1_WizardFrogSmol.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1881338"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EPO9afd/fsuITotYL3vcr7EOlxYRmZLz7YkzSChyd6s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 11 Nov 2024 19:32:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s1juxsm5q6"
+        },
+        {
+          "Name": "label",
+          "Value": "images/36898320-6f8e-464c-aece-ae69b6def8d1_WizardFrogSmol.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EPO9afd/fsuITotYL3vcr7EOlxYRmZLz7YkzSChyd6s="
+        }
+      ]
+    },
+    {
+      "Route": "images/5cec7140-4b4e-4d6b-bed1-fcff3a6a89f1_bg.3hy6slqflu.jpeg",
+      "AssetFile": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\5cec7140-4b4e-4d6b-bed1-fcff3a6a89f1_bg.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4245"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+ZvjBibc8B+bm/uvvVOri1KihWWWlBJnS2K+LSyP+0Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 11 Nov 2024 18:56:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3hy6slqflu"
+        },
+        {
+          "Name": "label",
+          "Value": "images/5cec7140-4b4e-4d6b-bed1-fcff3a6a89f1_bg.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+ZvjBibc8B+bm/uvvVOri1KihWWWlBJnS2K+LSyP+0Y="
+        }
+      ]
+    },
+    {
+      "Route": "images/5cec7140-4b4e-4d6b-bed1-fcff3a6a89f1_bg.jpeg",
+      "AssetFile": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\5cec7140-4b4e-4d6b-bed1-fcff3a6a89f1_bg.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4245"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+ZvjBibc8B+bm/uvvVOri1KihWWWlBJnS2K+LSyP+0Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 11 Nov 2024 18:56:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+ZvjBibc8B+bm/uvvVOri1KihWWWlBJnS2K+LSyP+0Y="
+        }
+      ]
+    },
+    {
+      "Route": "images/6aa5413f-9d34-44b6-8c68-1865405ab03f_blobbg.jpeg",
+      "AssetFile": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\6aa5413f-9d34-44b6-8c68-1865405ab03f_blobbg.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6511"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FWXDXFRJ9uacBxKVLJKWR+jZBNUZvWB1rOPlUO0R148=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 11 Nov 2024 19:32:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FWXDXFRJ9uacBxKVLJKWR+jZBNUZvWB1rOPlUO0R148="
+        }
+      ]
+    },
+    {
+      "Route": "images/6aa5413f-9d34-44b6-8c68-1865405ab03f_blobbg.rw5wlgo7g1.jpeg",
+      "AssetFile": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\6aa5413f-9d34-44b6-8c68-1865405ab03f_blobbg.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6511"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FWXDXFRJ9uacBxKVLJKWR+jZBNUZvWB1rOPlUO0R148=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 11 Nov 2024 19:32:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rw5wlgo7g1"
+        },
+        {
+          "Name": "label",
+          "Value": "images/6aa5413f-9d34-44b6-8c68-1865405ab03f_blobbg.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FWXDXFRJ9uacBxKVLJKWR+jZBNUZvWB1rOPlUO0R148="
+        }
+      ]
+    },
+    {
       "Route": "images/b5742d29-5c50-4ab9-9cbd-d0dcc96d71f8_birb.eqnxtrpa72.jpeg",
       "AssetFile": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\b5742d29-5c50-4ab9-9cbd-d0dcc96d71f8_birb.jpeg",
       "Selectors": [],
@@ -5358,6 +5833,88 @@
       ]
     },
     {
+      "Route": "images/c0e63994-c0a2-4212-932e-fe6781c09e2a_blobbg.jpeg",
+      "AssetFile": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\c0e63994-c0a2-4212-932e-fe6781c09e2a_blobbg.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6511"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FWXDXFRJ9uacBxKVLJKWR+jZBNUZvWB1rOPlUO0R148=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 11 Nov 2024 18:56:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FWXDXFRJ9uacBxKVLJKWR+jZBNUZvWB1rOPlUO0R148="
+        }
+      ]
+    },
+    {
+      "Route": "images/c0e63994-c0a2-4212-932e-fe6781c09e2a_blobbg.rw5wlgo7g1.jpeg",
+      "AssetFile": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\c0e63994-c0a2-4212-932e-fe6781c09e2a_blobbg.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6511"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FWXDXFRJ9uacBxKVLJKWR+jZBNUZvWB1rOPlUO0R148=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 11 Nov 2024 18:56:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rw5wlgo7g1"
+        },
+        {
+          "Name": "label",
+          "Value": "images/c0e63994-c0a2-4212-932e-fe6781c09e2a_blobbg.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FWXDXFRJ9uacBxKVLJKWR+jZBNUZvWB1rOPlUO0R148="
+        }
+      ]
+    },
+    {
       "Route": "images/cursor.7ng81dqyfv.png",
       "AssetFile": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\cursor.png",
       "Selectors": [],
@@ -5436,6 +5993,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-veRu4sDdRmbGQ5IWaxc1dVNalIS4SV5gPfeV2lYkHow="
+        }
+      ]
+    },
+    {
+      "Route": "images/de8188c4-5580-4b46-9054-29e38d8f77af_github_logo.bwhf3gahea.png",
+      "AssetFile": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\de8188c4-5580-4b46-9054-29e38d8f77af_github_logo.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1670"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WwvhHiG52eQpCbm7pWhQN0Wa/3xvx9jsTpUWnM9plmc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 11 Nov 2024 19:32:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bwhf3gahea"
+        },
+        {
+          "Name": "label",
+          "Value": "images/de8188c4-5580-4b46-9054-29e38d8f77af_github_logo.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WwvhHiG52eQpCbm7pWhQN0Wa/3xvx9jsTpUWnM9plmc="
+        }
+      ]
+    },
+    {
+      "Route": "images/de8188c4-5580-4b46-9054-29e38d8f77af_github_logo.png",
+      "AssetFile": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\de8188c4-5580-4b46-9054-29e38d8f77af_github_logo.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1670"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WwvhHiG52eQpCbm7pWhQN0Wa/3xvx9jsTpUWnM9plmc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 11 Nov 2024 19:32:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WwvhHiG52eQpCbm7pWhQN0Wa/3xvx9jsTpUWnM9plmc="
+        }
+      ]
+    },
+    {
+      "Route": "images/ed371be1-3a7b-463d-b750-eac255ae63c6_pepe_wizard.jpeg",
+      "AssetFile": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\ed371be1-3a7b-463d-b750-eac255ae63c6_pepe_wizard.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11019"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bWm9XyoWgnbymXoYjLnsEJ38k/rjn2lW5dUaaJeKDy0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 11 Nov 2024 18:25:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bWm9XyoWgnbymXoYjLnsEJ38k/rjn2lW5dUaaJeKDy0="
+        }
+      ]
+    },
+    {
+      "Route": "images/ed371be1-3a7b-463d-b750-eac255ae63c6_pepe_wizard.z8t69x3fxt.jpeg",
+      "AssetFile": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\ed371be1-3a7b-463d-b750-eac255ae63c6_pepe_wizard.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11019"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bWm9XyoWgnbymXoYjLnsEJ38k/rjn2lW5dUaaJeKDy0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 11 Nov 2024 18:25:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z8t69x3fxt"
+        },
+        {
+          "Name": "label",
+          "Value": "images/ed371be1-3a7b-463d-b750-eac255ae63c6_pepe_wizard.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bWm9XyoWgnbymXoYjLnsEJ38k/rjn2lW5dUaaJeKDy0="
         }
       ]
     },

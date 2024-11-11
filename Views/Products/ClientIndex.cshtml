@@ -61,8 +61,11 @@
 
 <script>
     function expandCard(event, productId) {
-        // JavaScript handling for expandCard should treat productId as an integer.
-        console.log("Product ID:", productId);
+        // Check if the clicked element is a button or anchor tag
+        if (event.target.tagName === 'BUTTON' || event.target.tagName === 'A') {
+            return; // Do not expand the card if a button or anchor tag is clicked
+        }
+        // Toggle expanded class for card
         document.getElementById("product-card-" + productId).classList.toggle("expanded");
         document.getElementById("overlay").style.display = "block";
     }

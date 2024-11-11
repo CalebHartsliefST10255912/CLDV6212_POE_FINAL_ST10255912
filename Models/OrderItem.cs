@@ -15,6 +15,9 @@ namespace ABC_Retail_ST10255912_POE.Models
         public int ProductID { get; set; }
 
         public decimal Price { get; set; }
+
+        public int Quantity { get; set; }
+
         [NotMapped]
         public string FormattedPrice
         {

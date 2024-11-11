@@ -124,51 +124,49 @@ namespace ABC_Retail_ST10255912_POE.Controllers
         public async Task<IActionResult> CreateOrder()
         {
             var user = await _userManager.GetUserAsync(User);
-            if (user == null)
-                return Challenge();
+            if (user == null) return Challenge();
 
             var cart = await _context.Carts
                                      .Include(c => c.CartItems)
-                                         .ThenInclude(ci => ci.Products)
+                                     .ThenInclude(ci => ci.Products)
                                      .FirstOrDefaultAsync(c => c.UserID == user.Id);
 
             if (cart == null || !cart.CartItems.Any())
                 return RedirectToAction("Index", "Home");
 
-
+            // Create the order and order items
             var order = new Order
             {
                 UserID = user.Id,
-
                 CreatedDate = DateTime.Now,
                 ModifiedDate = DateTime.Now,
                 OrderStatus = Enums.OrderStatus.Pending,
-                TotalPrice = cart.CartItems.Sum(item => item.Products.Price),
-                // Creating order items
+                TotalPrice = cart.CartItems.Sum(item => item.Products.Price * item.Quantity),
                 OrderItems = cart.CartItems.Select(ci => new OrderItem
                 {
                     ProductID = ci.ProductID,
-                    Price = ci.Products.Price
+                    Price = ci.Products.Price,
+                    Quantity = ci.Quantity
                 }).ToList()
             };
 
-            var userOrders = await _context.Order
-                                      .Where(o => o.UserID == order.UserID)
-                                      .OrderBy(o => o.CreatedDate)
-                                      .ToListAsync();
-
-
-            order.UserOrderNumber = userOrders.Count + 1;
+            // Deduct quantities from product stock
+            foreach (var cartItem in cart.CartItems)
+            {
+                cartItem.Products.Quantity -= cartItem.Quantity;
+                if (cartItem.Products.Quantity <= 0)
+                {
+                    cartItem.Products.InStock = false;
+                }
+            }
 
             _context.Order.Add(order);
-            await _context.SaveChangesAsync();
-
-
             _context.Carts.Remove(cart);
             await _context.SaveChangesAsync();
 
             return RedirectToAction("OrderDetails", new { orderId = order.OrderID });
         }
+
 
 
 

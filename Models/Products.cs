@@ -26,6 +26,7 @@ namespace ABC_Retail_ST10255912_POE.Models
 
         [Display(Name = "In Stock")]
         public bool InStock { get; set; }
+        public int Quantity { get; set; }
         public string? ImagePath { get; set; }
         public int CategoryID { get; set; }
 

@@ -101,38 +101,34 @@ body {
     font-family: 'Monoton', sans-serif;
 }
 
-/* Container for the nested ring buttons, centered on the screen */
 .ring-button-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
 }
 
-/* General styling for each ring button */
 .ring {
-    position: absolute; /* Stack rings on top of each other */
+    position: absolute; 
     display: flex;
     justify-content: center;
     align-items: center;
-    text-decoration: none; /* Remove link underline */
-    color: black; /* Text color */
+    text-decoration: none; 
+    color: black; 
     border-radius: 50%;
-    transition: transform 0.3s ease; /* Smooth grow/shrink effect */
-    cursor: pointer; /* Indicate that it’s clickable */
+    transition: transform 0.3s ease; 
+    cursor: pointer;
 }
 
-/* Hover effect: scale up slightly */
 .ring:hover {
-    transform: scale(1.1); /* Grow on hover */
+    transform: scale(1.1); 
 }
 
-/* Styling for text inside each ring */
 .ring-text {
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
-    pointer-events: none; /* Prevent text from blocking link click */
+    pointer-events: none;
 }
 
 /* Inner most ring */
@@ -167,13 +163,12 @@ body {
     z-index: 1;
 }
 
-/* Hover effect for product cards */
 .card {
-    transition: transform 0.3s ease; /* Smooth transition */
+    transition: transform 0.3s ease; 
 }
 
 .card:hover {
-    transform: translateY(-10px); /* Move card up on hover */
+    transform: translateY(-10px);
 }
 
 /* Base card styling with transition */
@@ -183,26 +178,32 @@ body {
     cursor: pointer;
     position: relative; /* Needed to smoothly position the card */
     background-color: black;
+    border-radius: 2%;
+    min-height: 500px;
 }
 
 /* Expanded card style to center it on the screen */
 .product-card.expanded {
     width: 100%;
-    max-width: 700px; /* Adjust as needed */
+    max-width: 700px;
     height: auto;
-    max-height: 90vh; /* Limit height for smaller screens */
+    max-height: 95vh; /* Limit height for smaller screens */
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1000; /* Bring to front */
     padding: 20px;
-    background-color: white; /* Add background for visibility */
+    background-color: black; /* Add background for visibility */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
 }
 
 .product-card img {
-    transition: all 0.5s ease; /* Smooth transition for images */
+    transition: all 0.5s ease;
+    align-self: center;
+    padding: 30px;
+    border-radius: 10%;
+    min-height: 420px;
 }
 
 .product-card.expanded img {
