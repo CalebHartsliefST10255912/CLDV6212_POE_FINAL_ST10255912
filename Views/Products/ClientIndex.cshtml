@@ -8,7 +8,22 @@
 }
 
 <div class="container mt-4">
-    <h1 class="text-center mb-4">Our Products</h1>
+    <div class="typing-container" style="margin-bottom: 80px;">
+        <h1 id="dynamic-typing-text" class="typing-text"></h1>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Customize the text content you want to type
+            const textContent = "Our Products"; // Change as needed
+            const typingText = document.getElementById('dynamic-typing-text');
+            typingText.textContent = textContent;
+
+            // Calculate the width of the text content in `ch` units
+            const textLength = textContent.length;
+            typingText.style.setProperty('--typing-width', `${textLength}ch`); // Dynamic width in `ch`
+        });
+    </script>
 
     @if (SignInManager.IsSignedIn(User) && User.IsInRole("Admin"))
     {
@@ -36,7 +51,7 @@
                             <form asp-controller="Carts" asp-action="AddToCart" method="post" class="d-inline">
                                 <input type="hidden" name="productId" value="@product.ProductID" />
                                 <input type="hidden" name="quantity" value="1" />
-                                <button type="submit" class="category-tile">Add to Cart</button>
+                                <button type="submit" class="category-tile" onclick="incrementCartCounter()">Add to Cart</button>
                             </form>
                         }
                         else

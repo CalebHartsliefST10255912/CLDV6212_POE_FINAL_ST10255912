@@ -116,9 +116,6 @@ namespace ABC_Retail_ST10255912_POE.Controllers
             return View(order);
         }
 
-
-
-
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> CreateOrder()
@@ -163,6 +160,7 @@ namespace ABC_Retail_ST10255912_POE.Controllers
             _context.Order.Add(order);
             _context.Carts.Remove(cart);
             await _context.SaveChangesAsync();
+
 
             return RedirectToAction("OrderDetails", new { orderId = order.OrderID });
         }

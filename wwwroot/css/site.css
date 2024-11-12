@@ -177,7 +177,7 @@ body {
     overflow: hidden;
     cursor: pointer;
     position: relative; /* Needed to smoothly position the card */
-    background-color: black;
+    background-color: #333;
     border-radius: 2%;
     min-height: 500px;
 }
@@ -194,7 +194,7 @@ body {
     transform: translate(-50%, -50%);
     z-index: 1000; /* Bring to front */
     padding: 20px;
-    background-color: black; /* Add background for visibility */
+    background-color: #333; /* Add background for visibility */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
 }
 
@@ -241,6 +241,7 @@ body {
     white-space: nowrap;
     width: 0;
     animation: typing 3s steps(30, end) forwards, fadeInBackground 2s ease 2s forwards;
+    width: var(--typing-width);
 }
 
 @keyframes typing {
@@ -249,7 +250,7 @@ body {
     }
 
     100% {
-        width: 21ch; /* Adjust to match the text length */
+        width: var(--typing-width);
     }
 }
 

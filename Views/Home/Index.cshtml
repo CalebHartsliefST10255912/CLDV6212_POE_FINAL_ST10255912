@@ -4,23 +4,27 @@
 }
 
 <div class="typing-container" style="margin-top: 120px;">
-    <h1 id="typing-text" class="typing-text"></h1>
+    <h1 id="dynamic-typing-text" class="typing-text"></h1>
 </div>
+
 
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-        const typingText = document.getElementById('typing-text');
-        typingText.textContent = "Welcome to ABC Retail!"; // Customize this text
+        // Customize the text content you want to type
+        const textContent = "Welcome to ABC Retail!"; // Change as needed
+        const typingText = document.getElementById('dynamic-typing-text');
+        typingText.textContent = textContent;
 
-        setTimeout(() => {
-            document.body.style.overflow = 'auto'; // Enable scrolling after animation
-        }, 4000); // Match the timing with the fade-in background duration
+        // Calculate the width of the text content in `ch` units
+        const textLength = textContent.length;
+        typingText.style.setProperty('--typing-width', `${textLength}ch`); // Dynamic width in `ch`
     });
+
 </script>
 
 <div class="hero-section">
     <div class="hero-content">
-        <h1>Your Favorite Products, Right to Your Doorstep</h1>
+        <h1>Your Favorite Products!</h1>
         <p>Discover deals and products tailored just for you.</p>
         <a href="#deals" class="category-tile">Explore Deals</a>
     </div>
@@ -51,6 +55,35 @@
         <!-- JavaScript will insert random notes here -->
     </div>
 </div>
+
+<div id="deals" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" style="margin-bottom: 120px;"/>
+    <div class="carousel-inner">
+        @foreach (var product in Model)
+        {
+            <div class="carousel-item @(Model.First() == product ? "active" : "")">
+                <div class="mb-3" style="max-width: 500px; max-height: 550px; margin: auto; background-color: #333; border-radius: 10px;">
+                    <img src="@Url.Content("~/" + product.ImagePath)" class="card-img-top" alt="@product.ProductName" style="max-height: 300px; padding: 30px;" />
+                    <div class="card-body">
+                        <h5 class="card-title">@product.ProductName</h5>
+                        <p class="card-text"><strong>Price:</strong> @product.FormattedPrice</p>
+                        <p class="card-text"><small class="text-muted">Added recently</small></p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+    
+    <!-- Carousel controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#dealsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#dealsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
 
 <script>
     document.addEventListener('DOMContentLoaded', () => {
