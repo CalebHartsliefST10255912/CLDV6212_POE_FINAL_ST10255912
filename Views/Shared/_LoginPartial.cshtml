@@ -8,7 +8,7 @@
         if (User.IsInRole("Admin"))
         {
             <li class="nav-item">
-                <a class="nav-link text-white font-links" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @User.Identity?.Name!</a>
+                <a class="nav-link text-white font-links" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello Admin!</a>
             </li>
             <li class="nav-item">
                 <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
@@ -18,6 +18,12 @@
         }
         else
         {
+            <li class="nav-item">
+                <a class="nav-link text-white font-links me-3" asp-area="" asp-controller="Carts" asp-action="ViewCart" title="View Cart">
+                    <img src="~/images/shopping-bag.png" alt="Cart" style="width: 24px;" />
+                    <span id="cart-indicator" class="badge bg-danger position-absolute top-0 start-100 translate-middle">1</span>
+                </a>
+            </li>
             <li class="nav-item dropdown">
                 <a class="nav-link text-white font-links" href="#" id="ordersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Orders
@@ -26,10 +32,6 @@
                     <li><a class="dropdown-item" asp-area="" asp-controller="Orders" asp-action="ClientIndex">Pending Orders</a></li>
                     <li><a class="dropdown-item" asp-area="" asp-controller="Orders" asp-action="ClientOrderHistory">Processed Orders</a></li>
                 </ul>
-            </li>
-
-            <li class="nav-item">
-                <a class="nav-link text-white font-links" asp-area="" asp-controller="Carts" asp-action="ViewCart">Cart</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link text-white font-links" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @User.Identity?.Name!</a>

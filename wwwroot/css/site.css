@@ -25,7 +25,7 @@ body {
 .hero-section {
     background: url('/images/hero.jpg') no-repeat center center;
     background-size: cover;
-    padding: 100px 0;
+    padding: 50px 0;
     text-align: center;
     color: #fff;
 }
@@ -222,4 +222,103 @@ body {
     z-index: 500;
 }
 
+.badge {
+    font-size: 0.8rem;
+    padding: 0.3em 0.5em;
+}
 
+.typing-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3vh;
+    color: #fff;
+}
+
+.typing-text {
+    font-size: 2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 3s steps(30, end) forwards, fadeInBackground 2s ease 2s forwards;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 21ch; /* Adjust to match the text length */
+    }
+}
+
+@keyframes fadeInBackground {
+    from {
+        background-color: #1c1c1c;
+    }
+
+    to {
+        background-color: #1c1c1c;
+    }
+}
+
+/* To stop the border blinking after the typing animation */
+.typing-text::after {
+    content: '|';
+    animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+
+    51%, 100% {
+        opacity: 0;
+    }
+}
+
+
+.music-sheet-container {
+    position: relative;
+    top: 0;
+    right: 22%;
+    width: 99vw;
+    height: 50px; /* Adjust height as needed */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background: repeating-linear-gradient( black 0, black 2px, transparent 2px, transparent 20px );
+    background-size: 10% 8px; /* Distance between lines */
+}
+
+.music-sheet {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    white-space: nowrap;
+    height: 100%;
+    width: 100%;
+    animation: scroll 50s linear infinite;
+    font-size: 3.5rem; /* Adjust note size */
+}
+
+/* Define the scrolling animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(100vw);
+    }
+
+    100% {
+        transform: translateX(-100vw);
+    }
+}
+
+.note {
+    font-family: serif;
+    margin-right: 100px; /* Space between notes */
+    color: #333;
+}

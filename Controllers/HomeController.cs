@@ -1,15 +1,30 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using ABC_Retail_ST10255912_POE.Data;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace ABC_Retail_ST10255912_POE.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly ApplicationDbContext _context;
+
+        public HomeController(ApplicationDbContext context)
+        {
+            _context = context;
+        }
+
         // GET: HomeController
         public ActionResult Index()
         {
-            return View();
+            // Fetch the 3 latest products from the database
+            var latestProducts = _context.Products
+                .OrderByDescending(p => p.ProductID) // Assuming ProductID is auto-incremented
+                .Take(3)
+                .ToList();
+
+            return View(latestProducts); // Pass to the view
         }
 
         // GET: HomeController/Details/5
