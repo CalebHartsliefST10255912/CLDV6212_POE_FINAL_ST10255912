@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xg2B1aAaaF/K9R1hlVSUuG72vjC1AOSYUy7TLrqS2sQ=",
+  "Hash": "0RM/EM8o8H8pCB6DAmNT3yg9NF25jnstLh17nErPaac=",
   "Source": "ABC_Retail_ST10255912_POE",
   "BasePath": "_content/ABC_Retail_ST10255912_POE",
   "Mode": "Default",
@@ -1361,6 +1361,27 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\161554c1-9722-4738-a5f2-ce43d07d48c1_MichaelJacksonThrillerVinyl.webp",
+      "SourceId": "ABC_Retail_ST10255912_POE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\",
+      "BasePath": "_content/ABC_Retail_ST10255912_POE",
+      "RelativePath": "images/161554c1-9722-4738-a5f2-ce43d07d48c1_MichaelJacksonThrillerVinyl#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cvuk65i1eh",
+      "Integrity": "SDPNQU51yndjwusVefGQcVsGq4vgVB5ZZAX3fEiCEIg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\161554c1-9722-4738-a5f2-ce43d07d48c1_MichaelJacksonThrillerVinyl.webp"
+    },
+    {
       "Identity": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\22287779-98db-4fe4-a995-ef73e03feae2_birb.jpeg",
       "SourceId": "ABC_Retail_ST10255912_POE",
       "SourceType": "Discovered",
@@ -1403,6 +1424,69 @@
       "OriginalItemSpec": "wwwroot\\images\\36898320-6f8e-464c-aece-ae69b6def8d1_WizardFrogSmol.png"
     },
     {
+      "Identity": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\4183141a-e9dc-456d-aa2d-dbd27b64ba45_TheBeatlesVinyl.webp",
+      "SourceId": "ABC_Retail_ST10255912_POE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\",
+      "BasePath": "_content/ABC_Retail_ST10255912_POE",
+      "RelativePath": "images/4183141a-e9dc-456d-aa2d-dbd27b64ba45_TheBeatlesVinyl#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xi3fbhxs2q",
+      "Integrity": "mZ4TyB76e2VM5ysB9UdoRHGwQx2Zmc/EeBb5aLhMDI0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\4183141a-e9dc-456d-aa2d-dbd27b64ba45_TheBeatlesVinyl.webp"
+    },
+    {
+      "Identity": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\4bb7ecb5-df81-4508-bf7c-cd7800bc1fd9_LEDZeppelinPhysicalGraffiti.webp",
+      "SourceId": "ABC_Retail_ST10255912_POE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\",
+      "BasePath": "_content/ABC_Retail_ST10255912_POE",
+      "RelativePath": "images/4bb7ecb5-df81-4508-bf7c-cd7800bc1fd9_LEDZeppelinPhysicalGraffiti#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pqi95ta8hr",
+      "Integrity": "ISAxCATvokVBt6Zi0MqRW0N2zc63Kr+W4ru96rpNfPQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\4bb7ecb5-df81-4508-bf7c-cd7800bc1fd9_LEDZeppelinPhysicalGraffiti.webp"
+    },
+    {
+      "Identity": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\58fdca6e-64db-43dc-bea0-b98b0e7e4cb7_AbbaGoldenHitsVinyl.webp",
+      "SourceId": "ABC_Retail_ST10255912_POE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\",
+      "BasePath": "_content/ABC_Retail_ST10255912_POE",
+      "RelativePath": "images/58fdca6e-64db-43dc-bea0-b98b0e7e4cb7_AbbaGoldenHitsVinyl#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3aproc8q6o",
+      "Integrity": "RX+kMipY6YXNvJU+bdRhpgOyewgZOMOANhKdUvfgoyA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\58fdca6e-64db-43dc-bea0-b98b0e7e4cb7_AbbaGoldenHitsVinyl.webp"
+    },
+    {
       "Identity": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\5cec7140-4b4e-4d6b-bed1-fcff3a6a89f1_bg.jpeg",
       "SourceId": "ABC_Retail_ST10255912_POE",
       "SourceType": "Discovered",
@@ -1443,6 +1527,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\6aa5413f-9d34-44b6-8c68-1865405ab03f_blobbg.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\7756a6fc-672d-44d6-a2fc-cb31c87da3e6_GunsNRosesVinyl.webp",
+      "SourceId": "ABC_Retail_ST10255912_POE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\",
+      "BasePath": "_content/ABC_Retail_ST10255912_POE",
+      "RelativePath": "images/7756a6fc-672d-44d6-a2fc-cb31c87da3e6_GunsNRosesVinyl#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6oydeyt6xv",
+      "Integrity": "Oinu6Zys6JqXBRXjJ+6VT6kShd2Rw6/7HNFjlxtcfuQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\7756a6fc-672d-44d6-a2fc-cb31c87da3e6_GunsNRosesVinyl.webp"
     },
     {
       "Identity": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\b5742d29-5c50-4ab9-9cbd-d0dcc96d71f8_birb.jpeg",
@@ -1508,6 +1613,27 @@
       "OriginalItemSpec": "wwwroot\\images\\cursor.png"
     },
     {
+      "Identity": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\d953b5df-c908-4b39-84ac-efcfbbccdd76_AbbaGoldenHitsVinyl.webp",
+      "SourceId": "ABC_Retail_ST10255912_POE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\",
+      "BasePath": "_content/ABC_Retail_ST10255912_POE",
+      "RelativePath": "images/d953b5df-c908-4b39-84ac-efcfbbccdd76_AbbaGoldenHitsVinyl#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3aproc8q6o",
+      "Integrity": "RX+kMipY6YXNvJU+bdRhpgOyewgZOMOANhKdUvfgoyA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\d953b5df-c908-4b39-84ac-efcfbbccdd76_AbbaGoldenHitsVinyl.webp"
+    },
+    {
       "Identity": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\de8188c4-5580-4b46-9054-29e38d8f77af_github_logo.png",
       "SourceId": "ABC_Retail_ST10255912_POE",
       "SourceType": "Discovered",
@@ -1527,6 +1653,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\de8188c4-5580-4b46-9054-29e38d8f77af_github_logo.png"
+    },
+    {
+      "Identity": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\eab312a1-f26e-4118-a6c5-711fb7518ad1_KissVinyl.webp",
+      "SourceId": "ABC_Retail_ST10255912_POE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\",
+      "BasePath": "_content/ABC_Retail_ST10255912_POE",
+      "RelativePath": "images/eab312a1-f26e-4118-a6c5-711fb7518ad1_KissVinyl#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lmhe9ifsq2",
+      "Integrity": "vXHjltGpyeVYV0ObIeovGYq3mfnc2MHAl83/MSCqw/w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\eab312a1-f26e-4118-a6c5-711fb7518ad1_KissVinyl.webp"
     },
     {
       "Identity": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\ed371be1-3a7b-463d-b750-eac255ae63c6_pepe_wizard.jpeg",
@@ -1613,6 +1760,27 @@
       "OriginalItemSpec": "wwwroot\\images\\fcbc82c3-3396-49de-a918-505e05f46d1a_WizardFrogSmol.png"
     },
     {
+      "Identity": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\fea54023-8a6b-44c5-bf39-93df3b40220d_AbbaGoldenHitsVinyl.webp",
+      "SourceId": "ABC_Retail_ST10255912_POE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\",
+      "BasePath": "_content/ABC_Retail_ST10255912_POE",
+      "RelativePath": "images/fea54023-8a6b-44c5-bf39-93df3b40220d_AbbaGoldenHitsVinyl#[.{fingerprint}]?.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3aproc8q6o",
+      "Integrity": "RX+kMipY6YXNvJU+bdRhpgOyewgZOMOANhKdUvfgoyA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\fea54023-8a6b-44c5-bf39-93df3b40220d_AbbaGoldenHitsVinyl.webp"
+    },
+    {
       "Identity": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\shopping-bag.png",
       "SourceId": "ABC_Retail_ST10255912_POE",
       "SourceType": "Discovered",
@@ -1669,8 +1837,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "niqh1uu7qs",
-      "Integrity": "fxmXckzUid5FIBjnT+eKzreJAr3fWVivRIDyvsC/eak=",
+      "Fingerprint": "6zln78114p",
+      "Integrity": "AqaeoRtIlkxGV4bsafOu3D87fz3MDGv+Hd0QIS1MYvw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
@@ -5423,6 +5591,88 @@
       ]
     },
     {
+      "Route": "images/161554c1-9722-4738-a5f2-ce43d07d48c1_MichaelJacksonThrillerVinyl.cvuk65i1eh.webp",
+      "AssetFile": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\161554c1-9722-4738-a5f2-ce43d07d48c1_MichaelJacksonThrillerVinyl.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35012"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SDPNQU51yndjwusVefGQcVsGq4vgVB5ZZAX3fEiCEIg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Nov 2024 19:41:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cvuk65i1eh"
+        },
+        {
+          "Name": "label",
+          "Value": "images/161554c1-9722-4738-a5f2-ce43d07d48c1_MichaelJacksonThrillerVinyl.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SDPNQU51yndjwusVefGQcVsGq4vgVB5ZZAX3fEiCEIg="
+        }
+      ]
+    },
+    {
+      "Route": "images/161554c1-9722-4738-a5f2-ce43d07d48c1_MichaelJacksonThrillerVinyl.webp",
+      "AssetFile": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\161554c1-9722-4738-a5f2-ce43d07d48c1_MichaelJacksonThrillerVinyl.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35012"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SDPNQU51yndjwusVefGQcVsGq4vgVB5ZZAX3fEiCEIg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Nov 2024 19:41:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SDPNQU51yndjwusVefGQcVsGq4vgVB5ZZAX3fEiCEIg="
+        }
+      ]
+    },
+    {
       "Route": "images/22287779-98db-4fe4-a995-ef73e03feae2_birb.eqnxtrpa72.jpeg",
       "AssetFile": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\22287779-98db-4fe4-a995-ef73e03feae2_birb.jpeg",
       "Selectors": [],
@@ -5587,6 +5837,252 @@
       ]
     },
     {
+      "Route": "images/4183141a-e9dc-456d-aa2d-dbd27b64ba45_TheBeatlesVinyl.webp",
+      "AssetFile": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\4183141a-e9dc-456d-aa2d-dbd27b64ba45_TheBeatlesVinyl.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51730"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mZ4TyB76e2VM5ysB9UdoRHGwQx2Zmc/EeBb5aLhMDI0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Nov 2024 14:37:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mZ4TyB76e2VM5ysB9UdoRHGwQx2Zmc/EeBb5aLhMDI0="
+        }
+      ]
+    },
+    {
+      "Route": "images/4183141a-e9dc-456d-aa2d-dbd27b64ba45_TheBeatlesVinyl.xi3fbhxs2q.webp",
+      "AssetFile": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\4183141a-e9dc-456d-aa2d-dbd27b64ba45_TheBeatlesVinyl.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51730"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mZ4TyB76e2VM5ysB9UdoRHGwQx2Zmc/EeBb5aLhMDI0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Nov 2024 14:37:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xi3fbhxs2q"
+        },
+        {
+          "Name": "label",
+          "Value": "images/4183141a-e9dc-456d-aa2d-dbd27b64ba45_TheBeatlesVinyl.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mZ4TyB76e2VM5ysB9UdoRHGwQx2Zmc/EeBb5aLhMDI0="
+        }
+      ]
+    },
+    {
+      "Route": "images/4bb7ecb5-df81-4508-bf7c-cd7800bc1fd9_LEDZeppelinPhysicalGraffiti.pqi95ta8hr.webp",
+      "AssetFile": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\4bb7ecb5-df81-4508-bf7c-cd7800bc1fd9_LEDZeppelinPhysicalGraffiti.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "126236"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ISAxCATvokVBt6Zi0MqRW0N2zc63Kr+W4ru96rpNfPQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Nov 2024 14:40:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pqi95ta8hr"
+        },
+        {
+          "Name": "label",
+          "Value": "images/4bb7ecb5-df81-4508-bf7c-cd7800bc1fd9_LEDZeppelinPhysicalGraffiti.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ISAxCATvokVBt6Zi0MqRW0N2zc63Kr+W4ru96rpNfPQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/4bb7ecb5-df81-4508-bf7c-cd7800bc1fd9_LEDZeppelinPhysicalGraffiti.webp",
+      "AssetFile": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\4bb7ecb5-df81-4508-bf7c-cd7800bc1fd9_LEDZeppelinPhysicalGraffiti.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "126236"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ISAxCATvokVBt6Zi0MqRW0N2zc63Kr+W4ru96rpNfPQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Nov 2024 14:40:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ISAxCATvokVBt6Zi0MqRW0N2zc63Kr+W4ru96rpNfPQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/58fdca6e-64db-43dc-bea0-b98b0e7e4cb7_AbbaGoldenHitsVinyl.3aproc8q6o.webp",
+      "AssetFile": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\58fdca6e-64db-43dc-bea0-b98b0e7e4cb7_AbbaGoldenHitsVinyl.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36088"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RX+kMipY6YXNvJU+bdRhpgOyewgZOMOANhKdUvfgoyA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Nov 2024 14:36:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3aproc8q6o"
+        },
+        {
+          "Name": "label",
+          "Value": "images/58fdca6e-64db-43dc-bea0-b98b0e7e4cb7_AbbaGoldenHitsVinyl.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RX+kMipY6YXNvJU+bdRhpgOyewgZOMOANhKdUvfgoyA="
+        }
+      ]
+    },
+    {
+      "Route": "images/58fdca6e-64db-43dc-bea0-b98b0e7e4cb7_AbbaGoldenHitsVinyl.webp",
+      "AssetFile": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\58fdca6e-64db-43dc-bea0-b98b0e7e4cb7_AbbaGoldenHitsVinyl.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36088"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RX+kMipY6YXNvJU+bdRhpgOyewgZOMOANhKdUvfgoyA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Nov 2024 14:36:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RX+kMipY6YXNvJU+bdRhpgOyewgZOMOANhKdUvfgoyA="
+        }
+      ]
+    },
+    {
       "Route": "images/5cec7140-4b4e-4d6b-bed1-fcff3a6a89f1_bg.3hy6slqflu.jpeg",
       "AssetFile": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\5cec7140-4b4e-4d6b-bed1-fcff3a6a89f1_bg.jpeg",
       "Selectors": [],
@@ -5747,6 +6243,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-FWXDXFRJ9uacBxKVLJKWR+jZBNUZvWB1rOPlUO0R148="
+        }
+      ]
+    },
+    {
+      "Route": "images/7756a6fc-672d-44d6-a2fc-cb31c87da3e6_GunsNRosesVinyl.6oydeyt6xv.webp",
+      "AssetFile": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\7756a6fc-672d-44d6-a2fc-cb31c87da3e6_GunsNRosesVinyl.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51902"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Oinu6Zys6JqXBRXjJ+6VT6kShd2Rw6/7HNFjlxtcfuQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Nov 2024 14:38:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6oydeyt6xv"
+        },
+        {
+          "Name": "label",
+          "Value": "images/7756a6fc-672d-44d6-a2fc-cb31c87da3e6_GunsNRosesVinyl.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Oinu6Zys6JqXBRXjJ+6VT6kShd2Rw6/7HNFjlxtcfuQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/7756a6fc-672d-44d6-a2fc-cb31c87da3e6_GunsNRosesVinyl.webp",
+      "AssetFile": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\7756a6fc-672d-44d6-a2fc-cb31c87da3e6_GunsNRosesVinyl.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51902"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Oinu6Zys6JqXBRXjJ+6VT6kShd2Rw6/7HNFjlxtcfuQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Nov 2024 14:38:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Oinu6Zys6JqXBRXjJ+6VT6kShd2Rw6/7HNFjlxtcfuQ="
         }
       ]
     },
@@ -5997,6 +6575,88 @@
       ]
     },
     {
+      "Route": "images/d953b5df-c908-4b39-84ac-efcfbbccdd76_AbbaGoldenHitsVinyl.3aproc8q6o.webp",
+      "AssetFile": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\d953b5df-c908-4b39-84ac-efcfbbccdd76_AbbaGoldenHitsVinyl.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36088"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RX+kMipY6YXNvJU+bdRhpgOyewgZOMOANhKdUvfgoyA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Nov 2024 19:42:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3aproc8q6o"
+        },
+        {
+          "Name": "label",
+          "Value": "images/d953b5df-c908-4b39-84ac-efcfbbccdd76_AbbaGoldenHitsVinyl.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RX+kMipY6YXNvJU+bdRhpgOyewgZOMOANhKdUvfgoyA="
+        }
+      ]
+    },
+    {
+      "Route": "images/d953b5df-c908-4b39-84ac-efcfbbccdd76_AbbaGoldenHitsVinyl.webp",
+      "AssetFile": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\d953b5df-c908-4b39-84ac-efcfbbccdd76_AbbaGoldenHitsVinyl.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36088"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RX+kMipY6YXNvJU+bdRhpgOyewgZOMOANhKdUvfgoyA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Nov 2024 19:42:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RX+kMipY6YXNvJU+bdRhpgOyewgZOMOANhKdUvfgoyA="
+        }
+      ]
+    },
+    {
       "Route": "images/de8188c4-5580-4b46-9054-29e38d8f77af_github_logo.bwhf3gahea.png",
       "AssetFile": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\de8188c4-5580-4b46-9054-29e38d8f77af_github_logo.png",
       "Selectors": [],
@@ -6075,6 +6735,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-WwvhHiG52eQpCbm7pWhQN0Wa/3xvx9jsTpUWnM9plmc="
+        }
+      ]
+    },
+    {
+      "Route": "images/eab312a1-f26e-4118-a6c5-711fb7518ad1_KissVinyl.lmhe9ifsq2.webp",
+      "AssetFile": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\eab312a1-f26e-4118-a6c5-711fb7518ad1_KissVinyl.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38496"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vXHjltGpyeVYV0ObIeovGYq3mfnc2MHAl83/MSCqw/w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Nov 2024 14:38:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lmhe9ifsq2"
+        },
+        {
+          "Name": "label",
+          "Value": "images/eab312a1-f26e-4118-a6c5-711fb7518ad1_KissVinyl.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vXHjltGpyeVYV0ObIeovGYq3mfnc2MHAl83/MSCqw/w="
+        }
+      ]
+    },
+    {
+      "Route": "images/eab312a1-f26e-4118-a6c5-711fb7518ad1_KissVinyl.webp",
+      "AssetFile": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\eab312a1-f26e-4118-a6c5-711fb7518ad1_KissVinyl.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38496"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vXHjltGpyeVYV0ObIeovGYq3mfnc2MHAl83/MSCqw/w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Nov 2024 14:38:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vXHjltGpyeVYV0ObIeovGYq3mfnc2MHAl83/MSCqw/w="
         }
       ]
     },
@@ -6407,6 +7149,88 @@
       ]
     },
     {
+      "Route": "images/fea54023-8a6b-44c5-bf39-93df3b40220d_AbbaGoldenHitsVinyl.3aproc8q6o.webp",
+      "AssetFile": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\fea54023-8a6b-44c5-bf39-93df3b40220d_AbbaGoldenHitsVinyl.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36088"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RX+kMipY6YXNvJU+bdRhpgOyewgZOMOANhKdUvfgoyA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Nov 2024 19:49:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3aproc8q6o"
+        },
+        {
+          "Name": "label",
+          "Value": "images/fea54023-8a6b-44c5-bf39-93df3b40220d_AbbaGoldenHitsVinyl.webp"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RX+kMipY6YXNvJU+bdRhpgOyewgZOMOANhKdUvfgoyA="
+        }
+      ]
+    },
+    {
+      "Route": "images/fea54023-8a6b-44c5-bf39-93df3b40220d_AbbaGoldenHitsVinyl.webp",
+      "AssetFile": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\fea54023-8a6b-44c5-bf39-93df3b40220d_AbbaGoldenHitsVinyl.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36088"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RX+kMipY6YXNvJU+bdRhpgOyewgZOMOANhKdUvfgoyA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Nov 2024 19:49:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RX+kMipY6YXNvJU+bdRhpgOyewgZOMOANhKdUvfgoyA="
+        }
+      ]
+    },
+    {
       "Route": "images/shopping-bag.png",
       "AssetFile": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\shopping-bag.png",
       "Selectors": [],
@@ -6571,6 +7395,51 @@
       ]
     },
     {
+      "Route": "js/site.6zln78114p.js",
+      "AssetFile": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\js\\site.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1294"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AqaeoRtIlkxGV4bsafOu3D87fz3MDGv+Hd0QIS1MYvw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Nov 2024 15:07:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6zln78114p"
+        },
+        {
+          "Name": "label",
+          "Value": "js/site.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-AqaeoRtIlkxGV4bsafOu3D87fz3MDGv+Hd0QIS1MYvw="
+        }
+      ]
+    },
+    {
       "Route": "js/site.js",
       "AssetFile": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\js\\site.js",
       "Selectors": [],
@@ -6581,7 +7450,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1269"
+          "Value": "1294"
         },
         {
           "Name": "Content-Type",
@@ -6589,11 +7458,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"fxmXckzUid5FIBjnT+eKzreJAr3fWVivRIDyvsC/eak=\""
+          "Value": "\"AqaeoRtIlkxGV4bsafOu3D87fz3MDGv+Hd0QIS1MYvw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 12 Nov 2024 02:45:15 GMT"
+          "Value": "Tue, 12 Nov 2024 15:07:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6603,52 +7472,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-fxmXckzUid5FIBjnT+eKzreJAr3fWVivRIDyvsC/eak="
-        }
-      ]
-    },
-    {
-      "Route": "js/site.niqh1uu7qs.js",
-      "AssetFile": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\js\\site.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1269"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"fxmXckzUid5FIBjnT+eKzreJAr3fWVivRIDyvsC/eak=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 12 Nov 2024 02:45:15 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "niqh1uu7qs"
-        },
-        {
-          "Name": "label",
-          "Value": "js/site.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-fxmXckzUid5FIBjnT+eKzreJAr3fWVivRIDyvsC/eak="
+          "Value": "sha256-AqaeoRtIlkxGV4bsafOu3D87fz3MDGv+Hd0QIS1MYvw="
         }
       ]
     },

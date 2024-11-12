@@ -2468,6 +2468,88 @@
       ]
     },
     {
+      "Route": "images/161554c1-9722-4738-a5f2-ce43d07d48c1_MichaelJacksonThrillerVinyl.cvuk65i1eh.webp",
+      "AssetFile": "images/161554c1-9722-4738-a5f2-ce43d07d48c1_MichaelJacksonThrillerVinyl.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35012"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SDPNQU51yndjwusVefGQcVsGq4vgVB5ZZAX3fEiCEIg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Nov 2024 19:41:50 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cvuk65i1eh"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SDPNQU51yndjwusVefGQcVsGq4vgVB5ZZAX3fEiCEIg="
+        },
+        {
+          "Name": "label",
+          "Value": "images/161554c1-9722-4738-a5f2-ce43d07d48c1_MichaelJacksonThrillerVinyl.webp"
+        }
+      ]
+    },
+    {
+      "Route": "images/161554c1-9722-4738-a5f2-ce43d07d48c1_MichaelJacksonThrillerVinyl.webp",
+      "AssetFile": "images/161554c1-9722-4738-a5f2-ce43d07d48c1_MichaelJacksonThrillerVinyl.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35012"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SDPNQU51yndjwusVefGQcVsGq4vgVB5ZZAX3fEiCEIg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Nov 2024 19:41:50 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SDPNQU51yndjwusVefGQcVsGq4vgVB5ZZAX3fEiCEIg="
+        }
+      ]
+    },
+    {
       "Route": "images/22287779-98db-4fe4-a995-ef73e03feae2_birb.eqnxtrpa72.jpeg",
       "AssetFile": "images/22287779-98db-4fe4-a995-ef73e03feae2_birb.jpeg",
       "Selectors": [],
@@ -2632,6 +2714,252 @@
       ]
     },
     {
+      "Route": "images/4183141a-e9dc-456d-aa2d-dbd27b64ba45_TheBeatlesVinyl.webp",
+      "AssetFile": "images/4183141a-e9dc-456d-aa2d-dbd27b64ba45_TheBeatlesVinyl.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51730"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mZ4TyB76e2VM5ysB9UdoRHGwQx2Zmc/EeBb5aLhMDI0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Nov 2024 14:37:18 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mZ4TyB76e2VM5ysB9UdoRHGwQx2Zmc/EeBb5aLhMDI0="
+        }
+      ]
+    },
+    {
+      "Route": "images/4183141a-e9dc-456d-aa2d-dbd27b64ba45_TheBeatlesVinyl.xi3fbhxs2q.webp",
+      "AssetFile": "images/4183141a-e9dc-456d-aa2d-dbd27b64ba45_TheBeatlesVinyl.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51730"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mZ4TyB76e2VM5ysB9UdoRHGwQx2Zmc/EeBb5aLhMDI0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Nov 2024 14:37:18 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xi3fbhxs2q"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mZ4TyB76e2VM5ysB9UdoRHGwQx2Zmc/EeBb5aLhMDI0="
+        },
+        {
+          "Name": "label",
+          "Value": "images/4183141a-e9dc-456d-aa2d-dbd27b64ba45_TheBeatlesVinyl.webp"
+        }
+      ]
+    },
+    {
+      "Route": "images/4bb7ecb5-df81-4508-bf7c-cd7800bc1fd9_LEDZeppelinPhysicalGraffiti.pqi95ta8hr.webp",
+      "AssetFile": "images/4bb7ecb5-df81-4508-bf7c-cd7800bc1fd9_LEDZeppelinPhysicalGraffiti.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "126236"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ISAxCATvokVBt6Zi0MqRW0N2zc63Kr+W4ru96rpNfPQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Nov 2024 14:40:12 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pqi95ta8hr"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ISAxCATvokVBt6Zi0MqRW0N2zc63Kr+W4ru96rpNfPQ="
+        },
+        {
+          "Name": "label",
+          "Value": "images/4bb7ecb5-df81-4508-bf7c-cd7800bc1fd9_LEDZeppelinPhysicalGraffiti.webp"
+        }
+      ]
+    },
+    {
+      "Route": "images/4bb7ecb5-df81-4508-bf7c-cd7800bc1fd9_LEDZeppelinPhysicalGraffiti.webp",
+      "AssetFile": "images/4bb7ecb5-df81-4508-bf7c-cd7800bc1fd9_LEDZeppelinPhysicalGraffiti.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "126236"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ISAxCATvokVBt6Zi0MqRW0N2zc63Kr+W4ru96rpNfPQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Nov 2024 14:40:12 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ISAxCATvokVBt6Zi0MqRW0N2zc63Kr+W4ru96rpNfPQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/58fdca6e-64db-43dc-bea0-b98b0e7e4cb7_AbbaGoldenHitsVinyl.3aproc8q6o.webp",
+      "AssetFile": "images/58fdca6e-64db-43dc-bea0-b98b0e7e4cb7_AbbaGoldenHitsVinyl.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36088"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RX+kMipY6YXNvJU+bdRhpgOyewgZOMOANhKdUvfgoyA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Nov 2024 14:36:31 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3aproc8q6o"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RX+kMipY6YXNvJU+bdRhpgOyewgZOMOANhKdUvfgoyA="
+        },
+        {
+          "Name": "label",
+          "Value": "images/58fdca6e-64db-43dc-bea0-b98b0e7e4cb7_AbbaGoldenHitsVinyl.webp"
+        }
+      ]
+    },
+    {
+      "Route": "images/58fdca6e-64db-43dc-bea0-b98b0e7e4cb7_AbbaGoldenHitsVinyl.webp",
+      "AssetFile": "images/58fdca6e-64db-43dc-bea0-b98b0e7e4cb7_AbbaGoldenHitsVinyl.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36088"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RX+kMipY6YXNvJU+bdRhpgOyewgZOMOANhKdUvfgoyA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Nov 2024 14:36:31 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RX+kMipY6YXNvJU+bdRhpgOyewgZOMOANhKdUvfgoyA="
+        }
+      ]
+    },
+    {
       "Route": "images/5cec7140-4b4e-4d6b-bed1-fcff3a6a89f1_bg.3hy6slqflu.jpeg",
       "AssetFile": "images/5cec7140-4b4e-4d6b-bed1-fcff3a6a89f1_bg.jpeg",
       "Selectors": [],
@@ -2792,6 +3120,88 @@
         {
           "Name": "label",
           "Value": "images/6aa5413f-9d34-44b6-8c68-1865405ab03f_blobbg.jpeg"
+        }
+      ]
+    },
+    {
+      "Route": "images/7756a6fc-672d-44d6-a2fc-cb31c87da3e6_GunsNRosesVinyl.6oydeyt6xv.webp",
+      "AssetFile": "images/7756a6fc-672d-44d6-a2fc-cb31c87da3e6_GunsNRosesVinyl.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51902"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Oinu6Zys6JqXBRXjJ+6VT6kShd2Rw6/7HNFjlxtcfuQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Nov 2024 14:38:59 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6oydeyt6xv"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Oinu6Zys6JqXBRXjJ+6VT6kShd2Rw6/7HNFjlxtcfuQ="
+        },
+        {
+          "Name": "label",
+          "Value": "images/7756a6fc-672d-44d6-a2fc-cb31c87da3e6_GunsNRosesVinyl.webp"
+        }
+      ]
+    },
+    {
+      "Route": "images/7756a6fc-672d-44d6-a2fc-cb31c87da3e6_GunsNRosesVinyl.webp",
+      "AssetFile": "images/7756a6fc-672d-44d6-a2fc-cb31c87da3e6_GunsNRosesVinyl.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51902"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Oinu6Zys6JqXBRXjJ+6VT6kShd2Rw6/7HNFjlxtcfuQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Nov 2024 14:38:59 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Oinu6Zys6JqXBRXjJ+6VT6kShd2Rw6/7HNFjlxtcfuQ="
         }
       ]
     },
@@ -3042,6 +3452,88 @@
       ]
     },
     {
+      "Route": "images/d953b5df-c908-4b39-84ac-efcfbbccdd76_AbbaGoldenHitsVinyl.3aproc8q6o.webp",
+      "AssetFile": "images/d953b5df-c908-4b39-84ac-efcfbbccdd76_AbbaGoldenHitsVinyl.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36088"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RX+kMipY6YXNvJU+bdRhpgOyewgZOMOANhKdUvfgoyA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Nov 2024 19:42:35 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3aproc8q6o"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RX+kMipY6YXNvJU+bdRhpgOyewgZOMOANhKdUvfgoyA="
+        },
+        {
+          "Name": "label",
+          "Value": "images/d953b5df-c908-4b39-84ac-efcfbbccdd76_AbbaGoldenHitsVinyl.webp"
+        }
+      ]
+    },
+    {
+      "Route": "images/d953b5df-c908-4b39-84ac-efcfbbccdd76_AbbaGoldenHitsVinyl.webp",
+      "AssetFile": "images/d953b5df-c908-4b39-84ac-efcfbbccdd76_AbbaGoldenHitsVinyl.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36088"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RX+kMipY6YXNvJU+bdRhpgOyewgZOMOANhKdUvfgoyA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Nov 2024 19:42:35 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RX+kMipY6YXNvJU+bdRhpgOyewgZOMOANhKdUvfgoyA="
+        }
+      ]
+    },
+    {
       "Route": "images/de8188c4-5580-4b46-9054-29e38d8f77af_github_logo.bwhf3gahea.png",
       "AssetFile": "images/de8188c4-5580-4b46-9054-29e38d8f77af_github_logo.png",
       "Selectors": [],
@@ -3120,6 +3612,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-WwvhHiG52eQpCbm7pWhQN0Wa/3xvx9jsTpUWnM9plmc="
+        }
+      ]
+    },
+    {
+      "Route": "images/eab312a1-f26e-4118-a6c5-711fb7518ad1_KissVinyl.lmhe9ifsq2.webp",
+      "AssetFile": "images/eab312a1-f26e-4118-a6c5-711fb7518ad1_KissVinyl.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38496"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vXHjltGpyeVYV0ObIeovGYq3mfnc2MHAl83/MSCqw/w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Nov 2024 14:38:11 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lmhe9ifsq2"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vXHjltGpyeVYV0ObIeovGYq3mfnc2MHAl83/MSCqw/w="
+        },
+        {
+          "Name": "label",
+          "Value": "images/eab312a1-f26e-4118-a6c5-711fb7518ad1_KissVinyl.webp"
+        }
+      ]
+    },
+    {
+      "Route": "images/eab312a1-f26e-4118-a6c5-711fb7518ad1_KissVinyl.webp",
+      "AssetFile": "images/eab312a1-f26e-4118-a6c5-711fb7518ad1_KissVinyl.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38496"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vXHjltGpyeVYV0ObIeovGYq3mfnc2MHAl83/MSCqw/w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Nov 2024 14:38:11 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vXHjltGpyeVYV0ObIeovGYq3mfnc2MHAl83/MSCqw/w="
         }
       ]
     },
@@ -3452,6 +4026,88 @@
       ]
     },
     {
+      "Route": "images/fea54023-8a6b-44c5-bf39-93df3b40220d_AbbaGoldenHitsVinyl.3aproc8q6o.webp",
+      "AssetFile": "images/fea54023-8a6b-44c5-bf39-93df3b40220d_AbbaGoldenHitsVinyl.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36088"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RX+kMipY6YXNvJU+bdRhpgOyewgZOMOANhKdUvfgoyA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Nov 2024 19:49:33 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3aproc8q6o"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RX+kMipY6YXNvJU+bdRhpgOyewgZOMOANhKdUvfgoyA="
+        },
+        {
+          "Name": "label",
+          "Value": "images/fea54023-8a6b-44c5-bf39-93df3b40220d_AbbaGoldenHitsVinyl.webp"
+        }
+      ]
+    },
+    {
+      "Route": "images/fea54023-8a6b-44c5-bf39-93df3b40220d_AbbaGoldenHitsVinyl.webp",
+      "AssetFile": "images/fea54023-8a6b-44c5-bf39-93df3b40220d_AbbaGoldenHitsVinyl.webp",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36088"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/webp"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RX+kMipY6YXNvJU+bdRhpgOyewgZOMOANhKdUvfgoyA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Nov 2024 19:49:33 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RX+kMipY6YXNvJU+bdRhpgOyewgZOMOANhKdUvfgoyA="
+        }
+      ]
+    },
+    {
       "Route": "images/shopping-bag.png",
       "AssetFile": "images/shopping-bag.png",
       "Selectors": [],
@@ -3616,6 +4272,51 @@
       ]
     },
     {
+      "Route": "js/site.6zln78114p.js",
+      "AssetFile": "js/site.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1294"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AqaeoRtIlkxGV4bsafOu3D87fz3MDGv+Hd0QIS1MYvw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 12 Nov 2024 15:07:00 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6zln78114p"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-AqaeoRtIlkxGV4bsafOu3D87fz3MDGv+Hd0QIS1MYvw="
+        },
+        {
+          "Name": "label",
+          "Value": "js/site.js"
+        }
+      ]
+    },
+    {
       "Route": "js/site.js",
       "AssetFile": "js/site.js",
       "Selectors": [],
@@ -3630,7 +4331,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1269"
+          "Value": "1294"
         },
         {
           "Name": "Content-Type",
@@ -3638,62 +4339,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"fxmXckzUid5FIBjnT+eKzreJAr3fWVivRIDyvsC/eak=\""
+          "Value": "\"AqaeoRtIlkxGV4bsafOu3D87fz3MDGv+Hd0QIS1MYvw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 12 Nov 2024 02:45:15 GMT"
+          "Value": "Tue, 12 Nov 2024 15:07:00 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-fxmXckzUid5FIBjnT+eKzreJAr3fWVivRIDyvsC/eak="
-        }
-      ]
-    },
-    {
-      "Route": "js/site.niqh1uu7qs.js",
-      "AssetFile": "js/site.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1269"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"fxmXckzUid5FIBjnT+eKzreJAr3fWVivRIDyvsC/eak=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 12 Nov 2024 02:45:15 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "niqh1uu7qs"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-fxmXckzUid5FIBjnT+eKzreJAr3fWVivRIDyvsC/eak="
-        },
-        {
-          "Name": "label",
-          "Value": "js/site.js"
+          "Value": "sha256-AqaeoRtIlkxGV4bsafOu3D87fz3MDGv+Hd0QIS1MYvw="
         }
       ]
     },

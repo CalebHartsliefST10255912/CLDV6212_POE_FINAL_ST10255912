@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\161554c1-9722-4738-a5f2-ce43d07d48c1_MichaelJacksonThrillerVinyl.webp",
+      "PackagePath": "staticwebassets\\images\\161554c1-9722-4738-a5f2-ce43d07d48c1_MichaelJacksonThrillerVinyl.webp"
+    },
+    {
       "Id": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\22287779-98db-4fe4-a995-ef73e03feae2_birb.jpeg",
       "PackagePath": "staticwebassets\\images\\22287779-98db-4fe4-a995-ef73e03feae2_birb.jpeg"
     },
@@ -21,12 +25,28 @@
       "PackagePath": "staticwebassets\\images\\36898320-6f8e-464c-aece-ae69b6def8d1_WizardFrogSmol.png"
     },
     {
+      "Id": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\4183141a-e9dc-456d-aa2d-dbd27b64ba45_TheBeatlesVinyl.webp",
+      "PackagePath": "staticwebassets\\images\\4183141a-e9dc-456d-aa2d-dbd27b64ba45_TheBeatlesVinyl.webp"
+    },
+    {
+      "Id": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\4bb7ecb5-df81-4508-bf7c-cd7800bc1fd9_LEDZeppelinPhysicalGraffiti.webp",
+      "PackagePath": "staticwebassets\\images\\4bb7ecb5-df81-4508-bf7c-cd7800bc1fd9_LEDZeppelinPhysicalGraffiti.webp"
+    },
+    {
+      "Id": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\58fdca6e-64db-43dc-bea0-b98b0e7e4cb7_AbbaGoldenHitsVinyl.webp",
+      "PackagePath": "staticwebassets\\images\\58fdca6e-64db-43dc-bea0-b98b0e7e4cb7_AbbaGoldenHitsVinyl.webp"
+    },
+    {
       "Id": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\5cec7140-4b4e-4d6b-bed1-fcff3a6a89f1_bg.jpeg",
       "PackagePath": "staticwebassets\\images\\5cec7140-4b4e-4d6b-bed1-fcff3a6a89f1_bg.jpeg"
     },
     {
       "Id": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\6aa5413f-9d34-44b6-8c68-1865405ab03f_blobbg.jpeg",
       "PackagePath": "staticwebassets\\images\\6aa5413f-9d34-44b6-8c68-1865405ab03f_blobbg.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\7756a6fc-672d-44d6-a2fc-cb31c87da3e6_GunsNRosesVinyl.webp",
+      "PackagePath": "staticwebassets\\images\\7756a6fc-672d-44d6-a2fc-cb31c87da3e6_GunsNRosesVinyl.webp"
     },
     {
       "Id": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\b5742d29-5c50-4ab9-9cbd-d0dcc96d71f8_birb.jpeg",
@@ -41,8 +61,16 @@
       "PackagePath": "staticwebassets\\images\\cursor.png"
     },
     {
+      "Id": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\d953b5df-c908-4b39-84ac-efcfbbccdd76_AbbaGoldenHitsVinyl.webp",
+      "PackagePath": "staticwebassets\\images\\d953b5df-c908-4b39-84ac-efcfbbccdd76_AbbaGoldenHitsVinyl.webp"
+    },
+    {
       "Id": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\de8188c4-5580-4b46-9054-29e38d8f77af_github_logo.png",
       "PackagePath": "staticwebassets\\images\\de8188c4-5580-4b46-9054-29e38d8f77af_github_logo.png"
+    },
+    {
+      "Id": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\eab312a1-f26e-4118-a6c5-711fb7518ad1_KissVinyl.webp",
+      "PackagePath": "staticwebassets\\images\\eab312a1-f26e-4118-a6c5-711fb7518ad1_KissVinyl.webp"
     },
     {
       "Id": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\ed371be1-3a7b-463d-b750-eac255ae63c6_pepe_wizard.jpeg",
@@ -59,6 +87,10 @@
     {
       "Id": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\fcbc82c3-3396-49de-a918-505e05f46d1a_WizardFrogSmol.png",
       "PackagePath": "staticwebassets\\images\\fcbc82c3-3396-49de-a918-505e05f46d1a_WizardFrogSmol.png"
+    },
+    {
+      "Id": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\fea54023-8a6b-44c5-bf39-93df3b40220d_AbbaGoldenHitsVinyl.webp",
+      "PackagePath": "staticwebassets\\images\\fea54023-8a6b-44c5-bf39-93df3b40220d_AbbaGoldenHitsVinyl.webp"
     },
     {
       "Id": "C:\\Users\\caleb\\source\\repos\\ABC_Retail_ST10255912_POE\\ABC_Retail_ST10255912_POE\\wwwroot\\images\\shopping-bag.png",

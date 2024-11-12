@@ -14,7 +14,7 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.UserOrderNumber)
+                @Html.DisplayNameFor(model => model.OrderID)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.TotalPrice)
@@ -35,7 +35,7 @@
         {
             <tr>
                 <td>
-                    @Html.DisplayFor(modelItem => item.UserOrderNumber)
+                    @Html.DisplayFor(modelItem => item.OrderID)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.FormattedPrice)
@@ -50,11 +50,7 @@
 
                 <td>
 
-                    <a asp-action="Details" asp-route-id="@item.OrderID">Details</a> |
-                    @if (item.OrderStatus == ABC_Retail_ST10255912_POE.Enums.OrderStatus.Pending)
-                    {
-                        <a asp-action="Delete" asp-route-id="@item.OrderID">Delete</a>
-                    }
+                    <a asp-action="Details" asp-route-id="@item.OrderID">Details</a>
 
                 </td>
             </tr>

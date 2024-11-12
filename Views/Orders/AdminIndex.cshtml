@@ -79,7 +79,7 @@
                         <select name="OrderStatus" onchange="this.form.submit()" >
                             @if (item.OrderStatus == OrderStatus.Pending)
                             {
-                                <option value="" selected></option>
+                                <option value="" selected>Pending</option>
                                 @foreach (var status in Enum.GetValues(typeof(OrderStatus)).Cast<OrderStatus>().Where(s => s != OrderStatus.Pending))
                                 {
                                     @Html.Raw($"<option value=\"{status}\">{status}</option>")
@@ -98,7 +98,11 @@
                 </td>
                 <td>
 
-                    <a asp-action="Details" asp-route-id="@item.OrderID">Details</a>
+                    <a asp-action="Details" asp-route-id="@item.OrderID">Details</a> |
+                    @if (item.OrderStatus == ABC_Retail_ST10255912_POE.Enums.OrderStatus.Pending)
+                    {
+                        <a asp-action="Delete" asp-route-id="@item.OrderID">Delete</a>
+                    }
                 </td>
             </tr>
         }

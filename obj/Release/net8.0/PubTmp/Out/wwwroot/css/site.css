@@ -1,0 +1,325 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    cursor: url('../images/cursor.png'), auto;
+}
+
+.hero-section {
+    background: url('/images/hero.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 50px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.categories-section,
+.deals-section,
+.testimonials-section,
+.newsletter-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.category-tile {
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+}
+
+.category-tile:hover {
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+
+/* Custom class for the link text */
+.font-links {
+    font-family: 'Poiret One', sans-serif;
+    position: relative; /* For the underline effect */
+}
+
+/* Hover underline effect */
+.font-links::after {
+    content: '';
+    position: absolute;
+    left: 50%; /* Start at the center */
+    bottom: -2px; /* Position below the text */
+    width: 0;
+    height: 1px; /* Thin line */
+    background-color: white; /* White line color */
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out; /* Smooth fade-in effect */
+}
+
+.font-links:hover::after {
+    width: 100%; /* Expand to full width */
+    left: 0; /* Shift starting point to the left */
+}
+
+/* Custom class for the centered brand text */
+.font-Monoton {
+    font-family: 'Monoton', sans-serif;
+}
+
+.ring-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.ring {
+    position: absolute; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; 
+    color: black; 
+    border-radius: 50%;
+    transition: transform 0.3s ease; 
+    cursor: pointer;
+}
+
+.ring:hover {
+    transform: scale(1.1); 
+}
+
+.ring-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    pointer-events: none;
+}
+
+/* Inner most ring */
+.ring-1 {
+    width: 200px;
+    height: 200px;
+    border: 100px solid #FABC3F;
+    z-index: 4;
+}
+
+/* Second inner ring */
+.ring-2 {
+    width: 400px;
+    height: 400px;
+    border: 100px solid #E85C0D;
+    z-index: 3;
+}
+
+/* Second outer ring */
+.ring-3 {
+    width: 600px;
+    height: 600px;
+    border: 100px solid #C7253E;
+    z-index: 2;
+}
+
+/* Outermost ring */
+.ring-4 {
+    width: 800px;
+    height: 800px;
+    border: 100px solid #821131;
+    z-index: 1;
+}
+
+.card {
+    transition: transform 0.3s ease; 
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Base card styling with transition */
+.product-card {
+    transition: all 0.5s ease; /* Smooth transition for all properties */
+    overflow: hidden;
+    cursor: pointer;
+    position: relative; /* Needed to smoothly position the card */
+    background-color: #333;
+    border-radius: 2%;
+    min-height: 500px;
+}
+
+/* Expanded card style to center it on the screen */
+.product-card.expanded {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    max-height: 95vh; /* Limit height for smaller screens */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000; /* Bring to front */
+    padding: 20px;
+    background-color: #333; /* Add background for visibility */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
+}
+
+.product-card img {
+    transition: all 0.5s ease;
+    align-self: center;
+    padding: 30px;
+    border-radius: 10%;
+    min-height: 420px;
+}
+
+.product-card.expanded img {
+    width: 100%;
+    height: auto;
+}
+
+/* Optional: Darken background when a card is expanded */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+    z-index: 500;
+}
+
+.badge {
+    font-size: 0.8rem;
+    padding: 0.3em 0.5em;
+}
+
+.typing-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3vh;
+    color: #fff;
+}
+
+.typing-text {
+    font-size: 2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 3s steps(30, end) forwards, fadeInBackground 2s ease 2s forwards;
+    width: var(--typing-width);
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: var(--typing-width);
+    }
+}
+
+@keyframes fadeInBackground {
+    from {
+        background-color: #1c1c1c;
+    }
+
+    to {
+        background-color: #1c1c1c;
+    }
+}
+
+/* To stop the border blinking after the typing animation */
+.typing-text::after {
+    content: '|';
+    animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+
+    51%, 100% {
+        opacity: 0;
+    }
+}
+
+
+.music-sheet-container {
+    position: relative;
+    top: 0;
+    right: 22%;
+    width: 99vw;
+    height: 50px; /* Adjust height as needed */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background: repeating-linear-gradient( black 0, black 2px, transparent 2px, transparent 20px );
+    background-size: 10% 8px; /* Distance between lines */
+}
+
+.music-sheet {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    white-space: nowrap;
+    height: 100%;
+    width: 100%;
+    animation: scroll 50s linear infinite;
+    font-size: 3.5rem; /* Adjust note size */
+}
+
+/* Define the scrolling animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(100vw);
+    }
+
+    100% {
+        transform: translateX(-100vw);
+    }
+}
+
+.note {
+    font-family: serif;
+    margin-right: 100px; /* Space between notes */
+    color: #333;
+}
